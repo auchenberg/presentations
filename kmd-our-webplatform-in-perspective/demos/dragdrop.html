@@ -1,0 +1,40 @@
+<style>
+#holder {
+  border: 10px dashed #ccc;
+  width: 300px;
+  height: 300px;
+  margin: 20px auto;
+
+}
+#holder.hover { border: 10px dashed #333; }
+
+body {
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+   display: -webkit-box;
+}
+</style>
+
+<div id="holder"></div>
+
+<script>
+var holder = document.getElementById('holder'),
+    state = document.getElementById('status');
+
+holder.ondragover = function () { this.className = 'hover'; return false; };
+holder.ondragend = function () { this.className = ''; return false; };
+holder.ondrop = function (e) {
+  this.className = '';
+  e.preventDefault();
+
+  var reader = new FileReader();
+
+  reader.onload = function (event) {
+    holder.style.background = 'url(' + event.target.result + ') no-repeat center';
+  };
+
+  reader.readAsDataURL(e.dataTransfer.files[0]);
+
+  return false;
+};
+</script>

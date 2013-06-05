@@ -1,0 +1,1853 @@
+
+<!--
+Google IO 2012 HTML5 Slide Template
+
+Authors: Eric Bidelman <ebidel@gmail.com>
+         Luke Mahé <lukem@google.com>
+
+URL: https://code.google.com/p/io-2012-slides
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" media="all" href="assets/stylesheets/compiled/default.css">
+  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="assets/stylesheets/css/phone.css">
+  <base target="_blank">
+
+  <script data-main="assets/javascripts/slides" src="assets/javascripts/require-1.0.8.min.js"></script>
+</head>
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+
+  <slide class="title-slide segue nobackground">
+
+    <hgroup class="auto-fadein">
+      <img src="images/webplatform.png">
+      <h1 data-config-title></h1>
+      <h2 data-config-subtitle></h2>
+      <p data-config-presenter></p>
+    </hgroup>
+  </slide>
+
+  <slide class="about-slide">
+    <hgroup>
+      <h2>Who is this guy?</h2>
+    </hgroup>
+
+    <img src="images/zyb.png" class="zyb">
+    <img src="images/vodafone.png" class="vodafone">
+
+    <div style="border-left: 2px dashed #bebebe; position: absolute; top: 150px; bottom: 50px; left: 350px; "></div>
+    <img src="images/citrix.png" class="citrix">
+    <img src="images/podio.png" class="podio">
+
+    <div style="border-left: 2px dashed #bebebe; position: absolute; top: 150px; bottom: 50px; right: 350px; "></div>
+
+    <img src="images/cphjs.png" class="cphjs">
+    <img src="assets/images/w3c_logo.jpg" class="w3c">
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">Todays talk is about...</p>
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <img src="images/html5-logo.png" alt="Description" title="Description">
+      <footer class="source">W3C</footer>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Mostly browsers</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="images/browsers_horizontal.png" alt="Description" title="Description">
+      <footer class="source">http://www.toptenreviews.com/</footer>
+    </article>
+  </slide>
+
+
+  <slide class="section">
+    <hgroup>
+      <h2>Agenda</h2>
+    </hgroup>
+
+    <article class="">
+
+      <h3>Part 1: What's possible in the browser</h3>
+      <ul>
+        <li>Overview of today's browsers</li>
+        <li>Scaling on the clients</li>
+        <li>Demos of what's possible</li>
+      </ul>
+
+      <hr>
+      <h3>Break</h3>
+      <hr>
+
+      <h3>Part 2: Perspective, Problems and future</h3>
+      <ul>
+        <li>Problems</li>
+        <li>Mobile</li>
+        <li>Tooling</li>
+        <li>Future</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide class="segue section">
+    <hgroup>
+      <h2>Part 1</h2>
+      <h3>What's possible in the browser?</h3>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Today's desktop browsers</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <img src="images/browsers.png" alt="Description" title="Description">
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Their usage</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+
+      <iframe style="width: 1000px; border: 0; margin-top: -20px; margin-left: 50px;" srcdoc="<div id=browser-ww-yearly-2008-2013 width=900 height=500></div>
+      <script type=text/javascript src=http://www.statcounter.com/js/FusionCharts.js></script>
+      <script type=text/javascript src=http://gs.statcounter.com/chart.php?browser-ww-yearly-2008-2013></script>
+      "></iframe>
+
+       <footer class="source">
+        <a href="http://gs.statcounter.com/#browser-ww-yearly-2008-2013">StatCounter Global Stats - Browser Market Share</a>
+      </footer>
+
+
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Continuous deployment.</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">Updates every 6th week...</p>
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">What do you think, when you see?</p>
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <img src="images/html5-logo.png" alt="Description" title="Description">
+      <footer class="source">W3C</footer>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Some think...</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <img src="images/monster.gif" alt="Description" title="Description">
+      <footer class="source">http://jwiersma.wordpress.com/2011/11/22/the-green-pue-monster/</footer>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Others..</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <img src="images/supercar.png" alt="Description" title="Description">
+      <footer class="source">http://cemagraphics.deviantart.com</footer>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Because of the this.</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="images/hypecycle.png" alt="Description" title="Description">
+      <footer class="source">http://en.wikipedia.org/wiki/Hype_cycle</footer>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Is much more than this spec...</h2>
+    </hgroup>
+    <article>
+      <iframe data-src="http://www.w3.org/TR/html5/"></iframe>
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <img src="images/html5-tagcloud.png" alt="Description" title="Description">
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">Web applications</p>
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">What does this mean to our architecture?</p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Server-sided architecture</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="images/architecture_classic.jpg" alt="Description" title="Description">
+      <footer class="source">LinkedIn</footer>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Client-sided architecture</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="images/architecture_clientside.jpg" alt="Description" title="Description">
+      <footer class="source">LinkedIn</footer>
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <h1 style="font-size: 50px; text-align: center;">So what's possible in the browser?</h1>
+    </article>
+  </slide>
+
+
+  <slide class="segeu">
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">I'm not here "buzz" HTML5</p>
+    </article>
+  </slide>
+
+  <!-- Web Workers -->
+
+  <slide class="">
+    <hgroup>
+      <h2>WebWorkers</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="assets/images/webworkers.png" />
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>WebWorkers</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+
+    <pre class="prettyprint" data-lang="javascript">
+var worker = new Worker('doWork.js');
+
+worker.addEventListener('message', function(e) {
+  console.log('Worker said: ', e.data);
+}, false);
+
+// doWork.js
+self.addEventListener('message', function(e) {
+  self.postMessage(e.data);
+}, false);
+
+      </pre>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>WebWorkers</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;"><a href="http://slides.html5rocks.com/#web-workers">Demo time</a></p>
+    </article>
+  </slide>
+
+  <!--history.push -->
+
+  <slide class="">
+    <hgroup>
+      <h2>history.pushState</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="assets/images/history_pushState.png" />
+    </article>
+  </slide>
+
+
+  <slide>
+    <hgroup>
+      <h2>history.pushState</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+
+    <pre class="prettyprint" data-lang="javascript">
+window.history.pushState(state, title,url);
+
+window.history.replaceState(state, title,url);
+
+window.onpopstate = function(e) { // e.state };
+
+history.pushState({page: 1}, "title 1", "/push/history/1" + window.location.hash);
+history.pushState({page: 2}, "title 2", "/push/history/2" + window.location.hash);
+history.replaceState({page: 3}, "title 3", "/push/history/3" + window.location.hash);
+      </pre>
+
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>history.pushState</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;"><a href="http://www.flickr.com/photos/auchenberg/5380850160/lightbox/">Demo: Flickr Slideshow</a></p>
+    </article>
+  </slide>
+
+  <!--files -->
+
+  <slide class="">
+    <hgroup>
+      <h2>File API's</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="assets/images/file_apis.png" />
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Multiple file uploading</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+
+    <pre class="prettyprint" data-lang="html">
+&lt;input type=&quot;file&quot; id=&quot;input&quot; multiple=&quot;true&quot; /&gt;
+
+<input type="file" id="input" multiple="true" />
+    </pre>
+
+    <pre class="prettyprint" data-lang="javascript">
+var domUpload = . getElementByID('upload');
+domUpload.onchange = function() {
+  var files = this.files;
+  files.each(function(item) {
+    item.name; // filename
+    item.size; // size, in bytes
+    item.type; // mime type
+  }
+}
+    </pre>
+
+
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Drag&Drop file uploading</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <iframe class="flexbox" style="height: 500px;" src="demos/dragdrop.html"></iframe>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Force file uploading</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+
+    <pre class="prettyprint" data-lang="html">
+
+&lt;a href=&quot;http://farm6.staticflickr.com/5089/5380850160_2ab992e5ed_z.jpg&quot;&gt;See this image&lt;/a&gt;
+
+<a href="http://farm6.staticflickr.com/5089/5380850160_2ab992e5ed_z.jpg">See this image</a>
+
+&lt;a href=&quot;http://farm6.staticflickr.com/5089/5380850160_2ab992e5ed_z.jpg&quot; download&gt;Download this image&lt;/a&gt;
+
+<a href="http://farm6.staticflickr.com/5089/5380850160_2ab992e5ed_z.jpg" download>Download this image</a>
+
+    </pre>
+
+    </article>
+  </slide>
+
+  <!-- WebSockets -->
+
+  <slide class="">
+    <hgroup>
+      <h2>WebSockets</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="assets/images/websockets.jpg" />
+    </article>
+  </slide>
+
+
+  <slide>
+    <hgroup>
+      <h2>WebSockets</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+
+    <pre class="prettyprint" data-lang="javascript">
+var socket = new WebSocket('ws://kenneth.io');
+socket.onopen = function(event) {
+  socket.send('Hello, WebSocket');
+};
+socket.onmessage = function(event) {
+  alert(event.data);
+};
+socket.onclose = function(event) {
+  alert('closed');
+};
+      </pre>
+
+    </article>
+  </slide>
+
+
+  <slide>
+    <hgroup>
+      <h2>Demo: Realtime canvas drawing</h2>
+    </hgroup>
+
+    <article class="">
+      <p>Powered by <a href="https://www.firebase.com">FireBase</a></p>
+      <iframe style="float:left; width: 225px; height: 210px; margin-right: 50px; padding: 10px; " src="https://www.firebase.com/tutorial/draw.html" scrolling="no"></iframe>
+      <iframe style="float:left; width: 225px; height: 210px; padding: 10px;" src="https://www.firebase.com/tutorial/draw.html" scrolling="no"></iframe>
+    </article>
+  </slide>
+
+  <!-- Server-sent events -->
+  <slide class="">
+    <hgroup>
+      <h2>Server-sent events</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="assets/images/server-sent-events.png" />
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Server-sent events</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+
+    <pre class="prettyprint" data-lang="javascript">
+var source = new EventSource('stream.php');
+
+source.addEventListener('message', function(e) {
+  console.log(e.data);
+}, false);
+
+source.addEventListener('open', function(e) {
+  // Connection was opened.
+}, false);
+
+source.addEventListener('error', function(e) {
+  if (e.eventPhase == EventSource.CLOSED) {
+    // Connection was closed.
+  }
+  source.close();
+}, false);
+      </pre>
+
+    </article>
+  </slide>
+
+
+  <slide>
+    <hgroup>
+      <h2>Server-sent events: Protocol</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+
+    <pre class="prettyprint" data-lang="javascript">
+id: 12345\n
+
+data: {\n
+data: "msg": "hello world",\n
+data: "id": 12345\n
+data: }\n\n
+
+retry: 10000\n
+
+data: hello world\n\n
+      </pre>
+
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Demo: Clock using server-sent events</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <iframe style="position: absolute;" src="http://googlecodesamples.com/html5/sse/sse.html"></iframe>
+    </article>
+  </slide>
+
+
+  <!-- SVG -->
+  <slide>
+    <hgroup>
+      <h2>SVG - Scalable Vector Graphics</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <iframe class="flexbox" style="height: 450px;" src="demos/svg.html"></iframe>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>SVG: D3.js showreel</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <iframe class="flexbox" style="height: 525px; margin-top: -10px;" src="http://bl.ocks.org/mbostock/raw/1256572/"></iframe>
+    </article>
+  </slide>
+
+  <!-- CSS -->
+  <slide class="">
+    <hgroup>
+      <h2>CSS: Transitions, Animations and Transforms</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="assets/images/css.png" />
+    </article>
+  </slide>
+
+
+  <!-- CSS Transitions -->
+  <slide class="">
+    <hgroup>
+      <h2>CSS: Transitions</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="assets/images/css_transition_principle.png" />
+      <footer class="source">https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Using_CSS_transitions</footer>
+    </article>
+  </slide>
+
+
+  <slide class="">
+    <hgroup>
+      <h2>CSS: Transitions</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <pre class="prettyprint" data-lang="css">
+  transition-property: font-size;
+  transition-duration: 4s;
+  transition-delay: 2s;
+  transition-timing-function: ease;
+
+  transition: &lt;property&gt; &lt;duration&gt; &lt;timing-function&gt; &lt;delay&gt;;
+      </pre>
+    </article>
+  </slide>
+
+
+  <slide>
+    <hgroup>
+      <h2>CSS: Transitions</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+
+    <pre class="prettyprint" data-lang="css">
+.box {
+    border-style: solid;
+    border-width: 1px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: #0000FF;
+    transition:width 2s, height 2s, background-color 2s, transform 2s;
+
+    &:hover {
+      background-color: #FFCCCC;
+      width:200px;
+      height:200px;
+      transform:rotate(180deg);
+    }
+}
+  </pre>
+
+<style type="text/css">
+.box {
+    border-style: solid;
+    border-width: 1px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: #0000FF;
+    position: absolute;
+    top: 200px;
+    right: 200px;
+    -moz-transition:width 2s, height 2s, background-color 2s, -moz-transform 2s;
+    -webkit-transition:width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+    -o-transition:width 2s, height 2s, background-color 2s, -o-transform 2s;
+    transition:width 2s, height 2s, background-color 2s, transform 2s;
+}
+.box:hover {
+    background-color: #FFCCCC;
+    width:200px;
+    height:200px;
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    -o-transform:rotate(180deg);
+    transform:rotate(180deg);
+}
+</style>
+<div class="box"></div>
+
+
+    </article>
+  </slide>
+
+
+  <slide class="">
+
+    <hgroup>
+      <h2>CSS: Animations</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <pre class="prettyprint" data-lang="css">
+.box-animated {
+  animation-duration: 3s;
+  animation-name: box-animate;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes box-animate {
+  from {
+    background-color: #0000FF;
+    width: 100px;
+    height: 100px;
+  }
+  to {
+    background-color: #FFCCCC;
+    width:200px;
+    height:200px;
+    transform:rotate(180deg);
+  }
+}
+      </pre>
+    </article>
+
+    <style type="text/css">
+
+    @-webkit-keyframes box-animate {
+      from {
+        background-color: #0000FF;
+        width: 100px;
+        height: 100px;
+      }
+
+      to {
+        background-color: #FFCCCC;
+        width:200px;
+        height:200px;
+        -webkit-transform:rotate(180deg);
+      }
+    }
+
+
+    .box-animated {
+      border-style: solid;
+      border-width: 1px;
+      display: block;
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      top: 200px;
+      right: 200px;
+
+      -webkit-animation-duration: 3s;
+      -webkit-animation-name: box-animate;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-direction: alternate;
+    }
+
+    </style>
+
+    <div class="box-animated"></div>
+
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;"><a href="http://www.clicktorelease.com/code/css3dclouds/">Demo: CSS 3D Clouds</a></p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Demo: Google Now in CSS</h2>
+    </hgroup>
+    <article class="">
+      <pre class="codepen" data-height="500" data-type="result" data-href="Ftczh" data-user="bennettfeely" data-safe="false">
+        <code></code>
+      </pre>
+      <script async src="http://codepen.io/assets/embed/ei.js"></script>
+    </article>
+  </slide>
+
+
+  <!-- CSS Filters -->
+
+  <slide>
+    <hgroup>
+      <h2>CSS Filters effects</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">CSS + OpenGL ES shading</p>
+    </article>
+  </slide>
+
+
+  <slide>
+    <hgroup>
+      <h2>CSS Filters: Syntax</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+
+    <pre class="prettyprint" data-lang="css">
+filter: &lt;filter-function&gt; [&lt;filter-function&gt;]* | none
+
+.myElement {
+  -webkit-filter: blur(2px) grayscale (.5) opacity(0.8);
+}
+    </pre>
+
+    </article>
+  </slide>
+
+
+  <slide>
+    <hgroup>
+      <h2>CSS Filters: Demo</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <iframe class="flexbox" style="position: absolute;" src="http://html5-demos.appspot.com/static/css/filters/index.html"></iframe>
+    </article>
+  </slide>
+
+
+  <!-- Canvas -->
+  <slide>
+    <hgroup>
+      <h2>Canvas</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">Pixel graphics</p>
+    </article>
+  </slide>
+
+  <!-- Canvas -->
+  <slide>
+    <hgroup>
+      <h2>Canvas: API</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+
+      <pre class="prettyprint" data-lang="html">
+&lt;canvas id=&quot;canvas&quot; width=&quot;838&quot; height=&quot;220&quot;&gt;&lt;/canvas&gt;
+</pre>
+      <pre class="prettyprint" data-lang="javascript">
+
+  var canvasContext = document.getElementById("canvas").getContext("2d");
+
+  canvasContext.fillRect(250, 25, 150, 100);
+
+  canvasContext.beginPath();
+  canvasContext.arc(450, 110, 100, Math.PI * 1/2, Math.PI * 3/2);
+  canvasContext.lineWidth = 15;
+  canvasContext.lineCap = 'round';
+  canvasContext.strokeStyle = 'rgba(255, 127, 0, 0.5)';
+  canvasContext.stroke();
+      </pre>
+
+<canvas id="canvas" width="838" height="220" style="position: absolute; right: 20px; top: 20px"></canvas>
+
+<script>
+  var canvasContext = document.getElementById("canvas").getContext("2d");
+  canvasContext.fillRect(250, 25, 150, 100);
+
+  canvasContext.beginPath();
+  canvasContext.arc(450, 110, 100, Math.PI * 1/2, Math.PI * 3/2);
+  canvasContext.lineWidth = 15;
+  canvasContext.lineCap = 'round';
+  canvasContext.strokeStyle = 'rgba(255, 127, 0, 0.5)';
+  canvasContext.stroke();
+</script>
+
+
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Canvas: MakeItBounce</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="http://uddannelsesforum2012.emu.dk/udstillingen/logoer/KMD_CVI_logo.jpg" />
+    </article>
+  </slide>
+
+
+  <slide>
+    <hgroup>
+      <h2>Canvas: MakeItBounce</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <iframe class="flexbox" style="height: 450px; padding-top: 50px; " src="http://minimal.io/experiments/MakeItBounce/#url=http%3A%2F%2Fuddannelsesforum2012.emu.dk%2Fudstillingen%2Flogoer%2FKMD_CVI_logo.jpg&r=20"></iframe>
+    </article>
+  </slide>
+
+
+
+  <!-- WebGL -->
+  <slide>
+    <hgroup>
+      <h2>WebGL</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">OpenGL for the web</p>
+    </article>
+  </slide>
+
+
+  <slide>
+    <hgroup>
+      <h2>WebGL: API</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+
+      <pre class="prettyprint" data-lang="html">
+&lt;canvas id=&quot;glcanvas&quot; width=&quot;838&quot; height=&quot;220&quot;&gt;&lt;/canvas&gt;
+</pre>
+      <pre class="prettyprint" data-lang="javascript">
+
+var canvas = document.getElementById("glcanvas");
+
+try {
+  // Try to grab the standard context. If it fails, fallback to experimental.
+  gl = canvas.getContext("webgl") || canvas.getContext("experimental-webgl");
+
+  gl.viewport(0, 0, canvas.width, canvas.height);
+  gl.clearColor(0.0, 0.0, 0.0, 1.0);
+  // Do the magic
+
+} catch(e) {
+  alert("Unable to initialize WebGL. Your browser may not support it.");
+}
+
+      </pre>
+  </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>WebGL: Demo</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;"><a href="http://threejs.org/examples/webgl_loader_ctm_materials.html">Demo: Three.js car rendering</a></p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>WebGL: Demo</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;"><a href="http://workshop.chromeexperiments.com/projects/armsglobe/">Demo: ArmsGlobe visualization</a></p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>WebGL: Google maps</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">New Google Maps (in Chrome stable)</p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>WebGL: Coming in IE11?</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;"><a href="https://vine.co/v/b9QqeAIPgua">IE WebGL vine?</a></p>
+    </article>
+  </slide>
+
+
+ <slide class="">
+    <hgroup>
+      <h2>CSS Custom Filters (CSS Shaders)</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="assets/images/css_shaders.jpg" />
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>CSS Custom Filters: Syntax</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+
+    <pre class="prettyprint" data-lang="css">
+.customShader {
+  filter:
+
+    custom(
+      url(vertexshader.vert)
+      mix(url(fragment.frag) normal source-atop),
+
+    /* Row, columns - the vertices are made automatically */
+    4 5,
+
+    time 0)
+}
+    </pre>
+
+    </article>
+  </slide>
+
+
+  <slide>
+    <hgroup>
+      <h2>CSS Custom Filters: Rows/Columns?</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="assets/images/css_shaders_rowscols.png" />
+      <footer class="source">http://updates.html5rocks.com/2013/03/Introduction-to-Custom-Filters-aka-CSS-Shaders</footer>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>CSS Shaders: Demo</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;"><a href="http://html.adobe.com/webplatform/graphics/customfilters/cssfilterlab/#wave">Demo: Adobe CSS Filter Lab</a></p>
+    </article>
+  </slide>
+
+
+  <!-- WebRTC -->
+  <slide>
+    <hgroup>
+      <h2>WebRTC</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">Realtime P2P communication</p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>WebRTC: Overview</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="assets/images/webrtc.JPG" />
+      <footer class="source">http://www.webtorials.com/</footer>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>WebRTC: Architecture</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="assets/images/webtrc_architecture.png" />
+      <footer class="source">http://www.webrtc.org</footer>
+    </article>
+  </slide>
+
+
+  <slide>
+    <hgroup>
+      <h2>WebRTC: History</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">2010: Google buys GIPS</p>
+    </article>
+  </slide>
+
+
+  <slide>
+    <hgroup>
+      <h2>WebRTC: History</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">2011: Begin W3C standardization</p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>WebRTC: History</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">2013: Firefox to Chrome communication</p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>WebRTC: History</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">2013 May: 1.000.000.000+ end-points </p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>WebRTC: Core parts</h2>
+    </hgroup>
+    <article class="">
+      <p style="font-size: 50px; text-align: left;">MediaStream (aka getUserMedia)</p>
+      <p style="font-size: 50px; text-align: left;">RTCPeerConnection</p>
+      <p style="font-size: 50px; text-align: left;">RTCDataChannel</p>
+    </article>
+  </slide>
+
+    <slide>
+    <hgroup>
+      <h2>WebRTC: getUserMedia</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+
+      <pre class="prettyprint" data-lang="html">
+&lt;video autoplay&gt;&lt;/video&gt;
+      </pre>
+
+
+    <pre class="prettyprint" data-lang="javascript">
+
+var video = document.querySelector('video');
+
+if (navigator.getUserMedia) {
+  navigator.getUserMedia({audio: true, video: true}, function(stream) {
+    video.src = window.URL.createObjectURL(stream);
+  }, onFailSoHard);
+} else {
+  video.src = 'somevideo.webm'; // fallback.
+}
+    </pre>
+
+    </article>
+  </slide>
+
+
+  <slide>
+    <hgroup>
+      <h2>WebRTC: getUserMedia - WebCamToy</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;"><a href="  http://webcamtoy.com/">Demo: WebCamToy</a></p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>WebRTC: Chat</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;"><a href="https://apprtc.appspot.com/?r=05604836">Demo: WebRTC</a></p>
+    </article>
+  </slide>
+
+  <!-- WebComponents -->
+  <slide>
+    <hgroup>
+      <h2>WebComponents</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">Modualiazing the web</p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>WebComponents: Core</h2>
+    </hgroup>
+    <article class="">
+
+    <ul class="">
+      <li class=""><a href="https://dvcs.w3.org/hg/webcomponents/raw-file/tip/spec/shadow/index.html">Shadow DOM</a> - <em>abstract the DOM away</em>
+        <ul class="">
+          <li class="">DOM &amp; CSS encapsulation</li>
+        </ul>
+      </li>
+      <li class=""><a href="http://dvcs.w3.org/hg/webcomponents/raw-file/tip/spec/templates/index.html">HTML Templates</a> - <em>scaffold/blueprint</em>
+        <ul class="">
+          <li class="">Templating back in the HTML.</li>
+        </ul>
+      </li>
+      <li class=""><a href="https://dvcs.w3.org/hg/webcomponents/raw-file/tip/spec/custom/index.html">Custom Elements</a> - <em>magic</em>
+        <ul class="">
+          <li class="">create new HTML elements - expand HTML's existing vocabulary</li>
+          <li class="">extend existing DOM objects with new imperative APIs</li>
+      </ul>
+      </li>
+      <li class=""><a href="https://dvcs.w3.org/hg/webcomponents/raw-file/tip/spec/imports/index.html">HTML Imports</a>
+        <ul class="">
+          <li class="">Package. Distribute. Share. Reuse.</li>
+          <li class="">&lt;link rel=&quot;import&quot; href=&quot;/imports/heart.html&quot;&gt;</li>
+        </ul>
+      </li>
+    </ul>
+
+    </article>
+  </slide>
+
+  <!-- WebComponents -->
+  <slide>
+    <hgroup>
+      <h2>WebComponents: Demo</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+
+      <p style="font-size: 50px; text-align: center;">&lt;gangnam-style&gt;&lt;/gangnam-style&gt;</p>
+
+      <iframe data-src="http://html5-demos.appspot.com/static/webcomponents/demos/components/my-components/gangnam.html" style="height:170px;border:none" src="http://html5-demos.appspot.com/static/webcomponents/demos/components/my-components/gangnam.html"></iframe>
+    </article>
+  </slide>
+
+
+
+  <slide class="section">
+    <hgroup>
+      <h2>Conclusion</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">Browser == Application runtime</p>
+    </article>
+  </slide>
+
+  <!-- Part2 -->
+  <slide class="segue section">
+    <hgroup>
+      <h2>Part 2</h2>
+      <h3>Perspective, problems and way forward.</h3>
+    </hgroup>
+  </slide>
+
+  <!-- HTML5 Logo history -->
+  <slide>
+    <article class="flexbox vcenter">
+      <img src="images/html5-logo.png" alt="Description" title="Description">
+      <footer class="source">W3C</footer>
+    </article>
+  </slide>
+
+
+  <!-- HTML5 Logo history -->
+  <slide>
+    <article class="">
+      <p style="font-size: 40px; text-align: left; margin-bottom: 40px; ">January 18, 2011</p>
+      <p style="font-size: 50px; text-align: left; margin-top: 100px;">CNET: "W3C's new logo promotes HTML5--and more"</p>
+
+      <p style="font-size: 30px; line-height: 160%; font-style: italic; text-align: left; margin-top: 100px;">
+        "The logo is a general-purpose visual identity for a broad set of open Web technologies, including HTML5, CSS, SVG, WOFF, and others,"
+      </p>
+    </article>
+  </slide>
+
+
+  <slide>
+    <article class="">
+      <p style="font-size: 40px; text-align: left; margin-bottom: 40px; ">January 19, 2011</p>
+      <p style="font-size: 50px; text-align: left; margin-top: 100px;">WHATWG: "HTML is the new HTML5"</p>
+
+      <p style="font-size: 30px; line-height: 160%; font-style: italic; text-align: left; margin-top: 100px;">
+        "... we moved to a new development model, where the technology is not versioned and instead we just have a living document that defines the technology as it evolves."
+      </p>
+    </article>
+  </slide>
+
+  <slide>
+    <article class="">
+      <p style="font-size: 40px; text-align: left; margin-bottom: 40px; ">January 19, 2011</p>
+
+      <iframe src="http://www.theregister.co.uk/2011/01/19/html5_logo/" height="400"></iframe>
+    </article>
+  </slide>
+
+  <slide>
+    <article class="">
+      <p style="font-size: 40px; text-align: left; margin-bottom: 40px; ">January 22, 2011</p>
+
+      <iframe src="http://www.theregister.co.uk/2011/01/22/html5_further_confusion/" height="400"></iframe>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>W3C HTML5 Spec.</h2>
+    </hgroup>
+    <article>
+      <iframe data-src="http://www.w3.org/TR/html5/"></iframe>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>WHATWG HTML Spec.</h2>
+    </hgroup>
+    <article>
+      <iframe data-src="http://www.whatwg.org/specs/web-apps/current-work/multipage/"></iframe>
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <img src="images/W3C_logo.jpg" alt="Description" title="Description" style="margin-right: 100px ">
+      <img src="images/whatwg-logo.png" alt="Description" title="Description" style=" ">
+      <footer class="source">W3C & WHATWG</footer>
+    </article>
+  </slide>
+
+
+  <slide>
+    <hgroup>
+      <h2>Evolution</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="images/evolution.jpg" alt="Description" title="Description">
+    </article>
+  </slide>
+
+
+  <slide class="quote">
+      <hgroup>
+        <h2>HTML5 Media CanPlayType API</h2>
+        <h3>"Do I look fat in this dress" API</h3>
+      </hgroup>
+    <article class="flexbox vleft">
+       <q>
+        The <b>canPlayType(type)</b> method must return the <b>empty string</b> if type is a type that the user agent knows it cannot render or is the type "application/octet-stream"; it must return <b>"probably"</b> if the user agent is confident that the type represents a media resource that it can render if used in with this audio or video element; and it must return <b>"maybe"</b> otherwise.
+      </q>
+      <div class="author">
+        <a href="http://www.w3.org/TR/2011/WD-html5-20110405/video.html#dom-navigator-canplaytype">W3C media elements spec</a>
+      </div>
+    </article>
+
+    <aside class="note">
+      <section>
+        <ul>
+          <li>Chris Heilmann nightligthed this</li>
+        </ul>
+      </section>
+    </aside>
+
+  </slide>
+
+  <slide>
+      <hgroup>
+        <h2>Weird evolution</h2>
+      </hgroup>
+    <article class="flexbox vcenter">
+      <img src="images/flot.gif" alt="Description" title="Description" height="400">
+      <footer class="source">http://i.imgur.com/5zKXz.gif</footer>
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">It's today's place for innovation.</p>
+    </article>
+  </slide>
+
+  <slide class="segue section">
+    <hgroup>
+      <h2>Today's browsers</h2>
+      <h3>Platform features</h3>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Platform features</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">What can we use today?</p>
+    </article>
+
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Overall browser stats</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+     <img src="images/browser-stats.png" alt="Description" title="Description">
+     <footer class="source">http://caniuse.com/#agents=desktop&sort=rscore</footer>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Remember canvas? (Apple, December, 2004)</h2>
+    </hgroup>
+
+    <article>
+      <iframe src="http://caniuse.com/canvas/embed/eras=-4,2" style="margin-top: -20px;"></iframe>
+    </article>
+  </slide>
+
+
+  <slide>
+    <hgroup>
+      <h2>Rounded corners (Firefox, November, 2004)</h2>
+    </hgroup>
+
+    <article>
+      <iframe src="http://caniuse.com/border-radius/embed/eras=-4,2" style="margin-top: -20px;"></iframe>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Video (Opera, June, 2007)</h2>
+    </hgroup>
+
+    <article>
+      <iframe src="http://caniuse.com/video/embed/eras=-4,2" style="margin-top: -20px;"></iframe>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>CSS3 3D Transforms (Apple, July 2009)</h2>
+    </hgroup>
+    <article>
+      <iframe src="http://caniuse.com/css-transitions/embed/eras=-4,2" style="margin-top: -20px;"></iframe>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>HTML5 Drag&Drop (2010)</h2>
+    </hgroup>
+    <article>
+      <iframe src="http://caniuse.com/dragndrop/embed/eras=-4,2" style="margin-top: -20px;"></iframe>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>JavaScript typed Arrays (2011)</h2>
+    </hgroup>
+    <article>
+      <iframe src="http://caniuse.com/typedarrays/embed/eras=-4,2" style="margin-top: -20px;"></iframe>
+    </article>
+  </slide>
+
+  <slide class="fill nobackground" style="background-image: url(images/pollution.jpg)"></slide>
+
+  <slide>
+    <hgroup>
+      <h2>Platform features</h2>
+    </hgroup>
+    <article class="">
+      <q style="display: block;font-size: 50px; text-align: left; line-height: 1.5em; padding-bottom: 50px; padding-top: 80px;">New features shipped <b>today</b> will not be usable until <b>2016</b>.</q>
+
+      <div class="author">Alex Russell, Google, Fronteers 2012</div>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>IE8 is Pollution</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+     <img src="images/browser-stats.png" alt="Description" title="Description">
+     <footer class="source">http://caniuse.com/#agents=desktop&sort=rscore</footer>
+    </article>
+  </slide>
+
+
+  <slide>
+    <hgroup>
+      <h2>Platform features</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">But the web is evolving... Fast?</p>
+    </article>
+  </slide>
+
+  <slide class="segue section">
+    <hgroup>
+      <h2>What about mobile?</h2>
+    </hgroup>
+  </slide>
+  <slide>
+    <hgroup>
+      <h2>Today's mobile browsers</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <img src="images/mobile_browsers.png" alt="Description" title="Description">
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Facebook and HTML5</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <img src="images/facebook-app.png" alt="Description" title="Description">
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>And it's problems...</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <img src="images/facebook-nocss.png" alt="Description" title="Description">
+    </article>
+  </slide>
+
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">and many others ...</p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Said about HTML5</h2>
+    </hgroup>
+
+    <article>
+
+      <q style="display: block; padding-top: 80px; padding-bottom: 50px;">
+        ... When I'm introspective about the last few years I think the <b>biggest
+        mistake</b> that we made, as a company, is <b>betting too much on HTML5</b> as
+        opposed to native... <b>because it just wasn't there...</b>.
+      </q>
+
+      <div class="author">
+        Mark Zuckerberg<br>
+        Facebook
+      </div>
+
+    </article>
+
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">W3C Core Mobile Web Platform Community Group</p>
+    </article>
+
+    <aside class="note">
+      <section>
+        <ul>
+          <li>groups use cases, scenarios</li>
+          <li>successful mobile development</li>
+        </ul>
+      </section>
+    </aside>
+
+  </slide>
+
+
+  <slide>
+    <hgroup>
+      <h2>We got a spec too!</h2>
+    </hgroup>
+    <article>
+      <iframe data-src="http://coremob.github.com/coremob-2012/"></iframe>
+    </article>
+  </slide>
+
+
+  <slide>
+    <hgroup>
+      <h2>Some of the identified problems</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li>Performance
+          <ul>
+            <li>FPS / GPU </li>
+            <li>PointerEvents</li>
+          </ul>
+        </li>
+        <li>Assets
+          <ul>
+            <li>Unloading images</li>
+            <li>Image formats</li>
+          </ul>
+        </li>
+        <li>Network/Caching/Storage
+          <ul>
+            <li>AppCache is unusable.</li>
+            <li>Reliable way to detect network.</li>
+          </ul>
+        </li>
+        <li>Memory/GC
+          <ul>
+            <li>How much memory does an object allocate?</li>
+          </ul>
+        </li>
+        <li>Tooling
+          <ul>
+            <li>Debugging / Blackboxes</li>
+          </ul>
+        </li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide class="segue section">
+    <hgroup>
+      <h2>What about our tooling?</h2>
+      <h3>We can do better.</h3>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">Our web developer tools isn't integrated.</p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Once upon a time</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <img src="images/ie-developer-toolbar.jpg" alt="Description" title="Description">
+    </article>
+
+    <footer class="source">http://sixrevisions.com/tools/internet_explorer_extensions_addons_web_developers/</footer>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Then here</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <img src="images/firebug.png" alt="Description" title="Description">
+    </article>
+  </slide>
+
+
+  <slide>
+    <hgroup>
+      <h2>Today</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <img src="images/chrome.png" alt="Description" title="Description">
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Typical bug-fixing workflow</h2>
+    </hgroup>
+
+    <article>
+      <iframe src="http://blog.kenneth.io/images/todays-frontend-flow.png" alt="Description" title="Description"></iframe>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Most developers live here</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <img src="images/visualstudio.png" alt="Description" title="Description">
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>... or in any other editor</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <img src="images/sublime.png" alt="Description" title="Description">
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">Our web development workflow is completely broken</p>
+    </article>
+  </slide>
+
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">browser !== editor</p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Fixing the symptom</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">Browser extensions.</p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Fixing the symptom</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">Making the browser our editor.</p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Chrome remote debugging</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <img src="images/chrome-remote-debugging.png" alt="Description" title="Description">
+    </article>
+
+    <footer class="source">http://www.youtube.com/watch?v=s4zpL4VBbuU</footer>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">What we need? (a suggestion)</p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Deep integration into our editors</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <img src="images/visual-debugging.png" alt="Description" title="Description">
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>JetBrains WebStorm</h2>
+    </hgroup>
+    <article style="margin-top: 20px;">
+       <iframe height="200" src="http://www.youtube.com/embed/2N5XlqJYhIg" frameborder="0" allowfullscreen></iframe>
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">We need to do something about this.</p>
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+     <p style="font-size: 50px; text-align: center; line-height: 160%;"><a href="http://blog.kenneth.io/blog/2013/05/21/our-web-development-workflow-is-completely-broken/">Blog post: Our web development workflow is completely broken.</a></p>
+    </article>
+  </slide>
+
+  <slide class="segue section">
+    <hgroup>
+      <h2>Going forward</h2>
+      <h3></h3>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Said about HTML5...continued</h2>
+    </hgroup>
+
+    <article>
+
+      <q style="display: block; padding-top: 80px; padding-bottom: 50px;">
+        ... I'm actually, on <b>long-term</b>, really excited about it. One of the
+        things that's interesting is we actually have <b>more people</b> on a <b>daily basis</b>
+        using <b>mobile Web Facebook</b> than we have using our iOS or Android apps
+        combined. So <b>mobile Web is a big thing</b> for us.
+      </q>
+
+      <div class="author">
+        Mark Zuckerberg<br>
+        Facebook
+      </div>
+
+    </article>
+
+  </slide>
+
+
+  <slide>
+    <hgroup>
+      <h2>Web-based Operating Systems</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="assets/images/firefoxos.jpg" />
+      <img src="assets/images/chromebook_pixel.png" style="margin-left: 50px;" />
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">We got a few problems.</p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>But, where are we coming from?</h2>
+    </hgroup>
+
+
+    <article class="flexbox vcenter">
+      <img src="images/practice.jpg" />
+    </article>
+
+    <aside class="note">
+      <section>
+        <ul>
+          <li>IE7: Pluto was still a planet</li>
+          <li>iPhone didn't exist</li>
+        </ul>
+      </section>
+    </aside>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Thought experiments</h2>
+    </hgroup>
+
+    <ul class="build" style="margin-top: 80px; ">
+
+      <li style="margin-bottom: 50px;">
+        <span style="font-size: 40px; ">What if there were only one browser?</span>
+      </li>
+
+
+      <li style="margin-bottom: 50px;">
+        <span style="font-size: 40px; line-height: 1.2em">What if everyone were instantly upgraded to the latest version of the best browser over night?</span>
+      </li>
+
+      <li>
+        <span class="build fade" style="display: block; font-size: 40px; line-height: 1.2em"> What if everyone were instantly upgraded, but there were no auto-updates?</span>
+      </li>
+    </ul>
+
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">It's about progress.</p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>So where are we?</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="images/hypecycle.png" alt="Description" title="Description">
+      <footer class="source">http://en.wikipedia.org/wiki/Hype_cycle</footer>
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">The web is changing every 6th week.</p>
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">The browsers vendor are listening to us.</p>
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">Let's drive the platform.</p>
+    </article>
+  </slide>
+
+  <slide class="thank-you-slide segue nobackground">
+    <article class="flexbox vleft">
+      <h2>Thanks.</h2>
+    </article>
+    <p class="auto-fadein" data-config-contact>
+      <!-- populated from slide_config.json -->
+    </p>
+  </slide>
+
+
+</slides>
+
+</body>
+</html>
