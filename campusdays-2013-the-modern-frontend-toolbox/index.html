@@ -1,0 +1,552 @@
+
+<!--
+Google IO 2012 HTML5 Slide Template
+
+Authors: Eric Bidelman <ebidel@gmail.com>
+         Luke Mahé <lukem@google.com>
+
+URL: https://code.google.com/p/io-2012-slides
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" media="all" href="assets/stylesheets/compiled/default.css">
+  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="assets/stylesheets/css/phone.css">
+  <base target="_blank">
+
+  <script data-main="assets/javascripts/slides" src="assets/javascripts/require-1.0.8.min.js"></script>
+</head>
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+
+  <slide class="title-slide segue nobackground">
+
+    <img src="assets/images/campus-days.png" width="200">
+    <h1 data-config-title></h1>
+
+    <div class="track">Developer</div>
+
+    <div class="box">
+      <h2 data-config-subtitle></h2>
+      <p data-config-presenter></p>
+    </div>
+
+  </slide>
+
+  <slide class="about-slide">
+    <hgroup>
+      <h2>Me me me!</h2>
+    </hgroup>
+
+    <img src="assets/images/zyb.png" class="zyb">
+    <img src="assets/images/vodafone.png" class="vodafone">
+
+    <div style="border-left: 2px dashed #bebebe; position: absolute; top: 150px; bottom: 50px; left: 350px; "></div>
+    <img src="assets/images/cphjs.png" class="cphjs">
+    <img src="assets/images/podio.png" class="podio">
+
+    <div style="border-left: 2px dashed #bebebe; position: absolute; top: 150px; bottom: 50px; right: 350px; "></div>
+    <img src="assets/images/citrix.png" class="citrix">
+
+  </slide>
+
+  <slide class="segue section">
+    <hgroup>
+      <h2>Frontend evolution</h2>
+      <h3>Today's reality.</h3>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <img src="assets/images/html5-logo.png" alt="Description" title="Description">
+      <footer class="source">W3C</footer>
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <img src="assets/images/html5-tagcloud.png" alt="Description" title="Description">
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">The browser is our application runtime</p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Browser landscape has changed.</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="assets/images/browsers_horizontal.png" alt="Description" title="Description">
+      <footer class="source">http://www.toptenreviews.com/</footer>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>x 1.000.000.0's of devices out there</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="assets/images/browser_windows.gif" alt="Description" title="Description">
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Traditional server-sided architecture</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="assets/images/architecture_classic.jpg" alt="Description" title="Description">
+      <footer class="source">LinkedIn</footer>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Client-sided architecture</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="assets/images/architecture_clientside.png" alt="Description" title="Description">
+      <footer class="source">LinkedIn</footer>
+    </article>
+  </slide>
+
+  <slide class="segue section">
+    <hgroup>
+      <h2>The modern toolbox.</h2>
+      <h3>Today's baseline.</h3>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <img src="assets/images/browser-flow.png" alt="Description" title="Description">
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <img src="assets/images/timeline.png" alt="Description" title="Description">
+      <footer class="source" style="margin-left: 30px;"><a href="http://www.paulirish.com/2012/talk-tooling-the-webapp-development-stack/">Paul Irish</a></footer>
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">Boilerplating</p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>No way around.</h2>
+    </hgroup>
+      <article>
+        <iframe src="http://html5boilerplate.com/"></iframe>
+      </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">Package management</p>
+    </article>
+  </slide>
+
+
+  <slide class="server-package-mangers">
+    <hgroup>
+      <h2>We know it from the server-side.</h2>
+    </hgroup>
+      <article>
+        <img src="assets/images/nuget_logo.svg" class="nuget" />
+        <img src="assets/images/rubygems_icon.png" class="rubygems" />
+        <img src="assets/images/npm.png" class="npm" width="300" />
+        <img src="assets/images/cocoa_pods_logo.png" class="cocoa" />
+        <img src="assets/images/maven_logo.png" class="maven" />
+      </article>
+  </slide>
+
+  <slide class="client-package-managers">
+    <hgroup>
+      <h2>Client-side package managers.</h2>
+    </hgroup>
+      <article>
+        <div class="bower">
+          <img src="assets/images/bower-logo.png" />
+          <p>Bower</p>
+        </div>
+
+        <img src="assets/images/component-logo.png" class="component" />
+      </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">Dependency management</p>
+    </article>
+  </slide>
+
+  <slide class="script-loaders">
+    <hgroup>
+      <h2>Script loaders</h2>
+    </hgroup>
+      <article>
+        <img src="assets/images/require-js-logo.png" class="require-js" width="300" />
+
+        <p>Asynchronous module definition (<strong>AMD</strong>)</p>
+      </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Asynchronous module definition</h2>
+    </hgroup>
+      <article>
+
+<pre class="prettyprint" data-lang="javascript">
+# Module
+(function () {
+    var $ = this.jQuery;
+
+    this.myExample = function () {};
+}());
+</pre>
+
+<pre class="prettyprint" data-lang="javascript">
+# CommonJS
+var $ = require('jquery');
+exports.myExample = function () {};
+</pre>
+
+<pre class="prettyprint" data-lang="javascript">
+# AMD
+define(['jquery'] , function ($) {
+    return function () {};
+});
+</pre>
+
+      </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Dependo - visualize your dependency graph.</h2>
+    </hgroup>
+      <article>
+        <iframe src="http://auchenberg.github.io/dependo/example/"></iframe>
+      </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">Authoring abstractions.</p>
+    </article>
+  </slide>
+
+  <slide class="authoring">
+    <h2>Precompiled CSS</h2>
+      <article>
+        <img src="assets/images/sass-logo.gif" class="sass" />
+        <img src="assets/images/less-logo.png" class="less" />
+        <img src="assets/images/stylus-logo.png" class="stylus" />
+        <img src="assets/images/autoprefixer-logo.svg" class="autoprefixer" />
+      </article>
+  </slide>
+
+  <slide class="authoring quote">
+    <h2>Why precompiled CSS?</h2>
+      <article>
+       <q style="margin-top: 200px; font-size: 40px; display: inline-block;">CSS is probably one of the most overlooked areas in web-dev.</q>
+      <div class="author">Myself</a>
+      </div>
+      </article>
+  </slide>
+
+  <slide class="authoring">
+    <h2>Precompiled CSS</h2>
+      <article>
+
+<pre class="prettyprint" data-lang="css" style="margin-top: 40px;">
+.slide {
+
+  &.current {
+    @include transform(translate3d(0, 0, 0));
+    display: block;
+    opacity: 1;
+
+    .auto-fadein {
+      opacity: 1;
+    }
+
+    .gdbar {
+      @include background-size(100% 100%);
+    }
+  }
+}
+
+</pre>
+
+      </article>
+  </slide>
+
+  <slide class="autoprefixer">
+    <h2>Autoprefixer</h2>
+      <article>
+        <img src="assets/images/autoprefixer-logo.svg" class="autoprefixer" style="display: block; margin: 90px auto 0 auto;" />
+      </article>
+  </slide>
+
+  <slide class="autoprefixer">
+    <h2>Autoprefixer</h2>
+      <article>
+
+
+<pre class="prettyprint" data-lang="css" style="margin-top: 20px;">
+:fullscreen a {
+  transition: transform 1s
+}
+</pre>
+
+<pre class="prettyprint" data-lang="javascript">
+var prefixed = autoprefixer.compile(css);
+</pre>
+
+<pre class="prettyprint" data-lang="css">
+:-webkit-full-screen a {
+  -webkit-transition: -webkit-transform 1s;
+  transition: transform 1s;
+}
+
+:-moz-full-screen a {
+  transition: transform 1s;
+}
+
+:fullscreen a {
+  -webkit-transition: -webkit-transform 1s;
+  transition: transform 1s;
+}
+</pre>
+
+
+      </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Autoprefixer</h2>
+    </hgroup>
+      <article>
+        <iframe src="http://caniuse.com/#cats=CSS"></iframe>
+      </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">Frameworks.</p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Frameworks</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center; font-weight: bold;">You need structure.</p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>... and more than jQuery</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="assets/images/jquery-logo.jpeg" />
+    </article>
+  </slide>
+
+
+  <slide class="frameworks">
+    <hgroup>
+      <h2>Frameworks</h2>
+    </hgroup>
+    <article>
+      <img src="assets/images/backbone.png" class="backbone" />
+      <img src="assets/images/angularjs.png" class="angular" />
+      <img src="assets/images/emberjs.png" class="ember" />
+      <img src="assets/images/ko-logo.png" class="knockout" />
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">Iteration workflow.</p>
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <a href="http://www.jshint.com/" target="_blank"><img src="assets/images/jshint-logo.png" alt="Description" title="Description"></a>
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <img src="assets/images/css-lint-logo.png" alt="Description" title="Description" />
+    </article>
+  </slide>
+
+  <slide>
+    <h2>LiveReload</h2>
+    <article class="flexbox vcenter">
+      <img src="assets/images/live_reload_icon.jpg" alt="Description" title="Description" />
+      <p>LiveReload</p>
+    </article>
+  </slide>
+
+  <slide>
+    <h2>Chrome DevTools</h2>
+    <article class="flexbox vcenter">
+      <img src="assets/images/chrome-devtools.png" alt="Description" title="Description" style="margin-bottom: 20px;" />
+      <p>Chrome DevTools</p>
+    </article>
+  </slide>
+
+  <slide>
+    <h2>BrowserStack</h2>
+    <article>
+      <iframe src="http://browserstack.com" style="margin-top: 40px; "></iframe>
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">Build Tools.</p>
+    </article>
+  </slide>
+
+  <slide>
+    <h2>Good old MSBuild</h2>
+    <article>
+      <iframe src="http://msdn.microsoft.com/en-us/library/wea2sca5(v=vs.90).aspx" style="margin-top: 40px; "></iframe>
+    </article>
+  </slide>
+
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center; font-weight: bold;">We got one too!</p>
+    </article>
+  </slide>
+
+  <slide>
+    <h2>Grunt</h2>
+    <article>
+      <iframe src="http://gruntjs.com" style="margin-top: 40px; "></iframe>
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">Testing.</p>
+    </article>
+  </slide>
+
+  <slide>
+    <h2>PhantomJS</h2>
+    <article>
+      <iframe src="http://phantomjs.org/" style="margin-top: 40px; "></iframe>
+    </article>
+  </slide>
+
+  <slide>
+    <h2>SlimerJS</h2>
+    <article>
+      <iframe src="http://slimerjs.org/index.html" style="margin-top: 40px; "></iframe>
+    </article>
+  </slide>
+
+  <slide>
+    <h2>CasperJS</h2>
+    <article>
+      <iframe src="http://casperjs.org/" style="margin-top: 40px; "></iframe>
+    </article>
+  </slide>
+
+  <slide>
+    <h2>Karma test runner</h2>
+    <article>
+      <iframe src="http://karma-runner.github.io/0.10/index.html " style="margin-top: 40px; "></iframe>
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">Future.</p>
+    </article>
+  </slide>
+
+  <slide>
+    <h2>Browser DevTools becomes IDE's</h2>
+    <article class="flexbox vcenter">
+      <img src="assets/images/devtools_becomes_ide.png" alt="Description" title="Description" />
+    </article>
+  </slide>
+
+  <slide>
+    <h2>Remote debugging getting attention</h2>
+    <article class="flexbox vcenter">
+      <img src="assets/images/remotedebug.png" alt="Description" title="Description" />
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">Summary.</p>
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <img src="assets/images/toolbox.png" />
+    </article>
+  </slide>
+
+
+  <slide class="thank-you-slide segue nobackground">
+    <article class="flexbox vleft">
+      <h2>Thanks!</h2>
+    </article>
+    <p class="auto-fadein" data-config-contact>
+      <!-- populated from slide_config.json -->
+    </p>
+  </slide>
+
+  <slide class="title-slide segue nobackground">
+
+    <img src="assets/images/campus-days.png" width="200">
+
+    <div class="box" style='height: auto; top: 300px;'>
+      <h2 style="margin-bottom: 30px;">Evaluation</h2>
+      <p>Create a Text message on your phone and send it to 1919 with the content:</p>
+      <img src="assets/images/evaluation.png" style="width: 700px; position: static; margin-top: 30px;" />
+    </div>
+
+  </slide>
+
+
+
+</slides>
+
+</body>
+</html>
