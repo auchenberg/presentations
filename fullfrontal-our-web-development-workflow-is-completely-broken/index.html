@@ -1,0 +1,538 @@
+
+<!--
+Google IO 2012 HTML5 Slide Template
+
+Authors: Eric Bidelman <ebidel@gmail.com>
+         Luke Mahé <lukem@google.com>
+
+URL: https://code.google.com/p/io-2012-slides
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" media="all" href="assets/stylesheets/compiled/default.css">
+  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="assets/stylesheets/css/phone.css">
+  <base target="_blank">
+
+  <script data-main="assets/javascripts/slides" src="assets/javascripts/require-1.0.8.min.js"></script>
+</head>
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+
+  <slide class="title-slide segue nobackground">
+
+    <hgroup class="auto-fadein">
+      <img src="assets/images/ff_logo.png" width="200">
+      <h1 data-config-title></h1>
+      <h2 data-config-subtitle></h2>
+      <p data-config-presenter></p>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">First a flashback.</p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>How I started coding</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+        <img src="assets/images/winamp.gif" alt="Description" title="Description">
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <img src="assets/images/workflow_timeline.png" alt="Description" title="Description">
+      <footer class="source" style="margin-left: 30px;"><a href="http://www.paulirish.com/2012/talk-tooling-the-webapp-development-stack/">Paul Irish</a>/<a href="http://addyosmani.com/">Addy Osmani</a>/Chrome</footer>
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <img src="assets/images/workflow_timeline.png" alt="Description" title="Description">
+      <div style="position: absolute; left: 50px; right: 50px; bottom: 100px; background: red; color: #fff; height: 100px; line-height: 100px; text-align: center;">Where does our editors fit?</div>
+      <footer class="source" style="margin-left: 30px;"><a href="http://www.paulirish.com/2012/talk-tooling-the-webapp-development-stack/">Paul Irish</a>/<a href="http://addyosmani.com/">Addy Osmani</a>/Chrome</footer>
+    </article>
+
+    <aside class="note">
+      <section>
+        <ul>
+          <li>Complex world</li>
+          <li>Focus on the iterative workflow/li>
+          <li>Does Chrome see a world without editors?</li>
+        </ul>
+      </section>
+    </aside>
+
+
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Today's webplatform.</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="assets/images/browsers_horizontal.png" alt="Description" title="Description">
+      <footer class="source">http://www.toptenreviews.com/</footer>
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">The browser is our application runtime</p>
+    </article>
+  </slide>
+
+  <slide class="segue section">
+    <hgroup>
+      <h2>What has happend?</h2>
+      <h3>Browser tooling.</h3>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Blackboxes.</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="assets/images/ie6.png" alt="Description" title="Description">
+    </article>
+  </slide>
+
+
+  <slide>
+    <hgroup>
+      <h2>IE Developer Toolbar</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <img src="assets/images/ie-developer-toolbar.jpg" alt="Description" title="Description">
+    </article>
+
+    <footer class="source">http://sixrevisions.com/tools/internet_explorer_extensions_addons_web_developers/</footer>
+
+    <aside class="note">
+      <section>
+        <p><b>"Inspect the element"</b></p>
+        <p><b>Simple HTML documents</b></p>
+        <p><b>>DHTML - focused around the DOM</b></p>
+      </section>
+    </aside>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Firebug</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <img src="assets/images/firebug.jpg" alt="Description" title="Description">
+    </article>
+
+    <aside class="note">
+      <section>
+        <p><b>Same assumptions</b></p>
+        <p><b>AJAX / Simple web apps.</b></p>
+        <p><b>Cookies!</b></p>
+        <p><b>Resources</b></p>
+      </section>
+    </aside>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Chrome & Firefox DevTools</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <img src="assets/images/firefox_developer_tools.png" alt="Description" title="Description"  style="position: absolute; top: 150px; left: 70px;">
+      <img src="assets/images/chrome_developer_tools.jpg" alt="Description" title="Description" style="position: absolute; top: 300px; left: 200px;">
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Dogma.</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <img src="assets/images/tools_comparision.png" alt="Description" title="Description">
+    </article>
+  </slide>
+
+  <slide class="segue section">
+    <hgroup>
+      <h2>What about our workflow?</h2>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">It hasn't really changed.</p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Typical bug-fixing workflow</h2>
+    </hgroup>
+
+    <article>
+      <img src="assets/images/todays_workflow.png" width="100%" alt="Description" title="Description"></img>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Reality.</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center; line-height: 70px; ">= our web development workflow is completely broken</p>
+    </article>
+  </slide>
+
+  <slide class="segue section">
+    <hgroup>
+      <h2>What have we done to fix it?</h2>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">Fixing the symptoms with more tools.</p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>More tools.</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="assets/images/terminals.png" alt="Description" title="Description">
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">Adding more complex workflows.</p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>LiveReload workflow</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="assets/images/livereload-flow.png" alt="Description" title="Description" height="500">
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">Introducing new prototyping tools.</p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>JsBin, CodePen, JsFiddle and many others</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="assets/images/jsbin.png" />
+      <img src="assets/images/codepen.png" />
+      <img src="assets/images/jsfiddle.png" style="width: 250px; margin-left: 50px;" />
+    </article>
+  </slide>
+
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">DevTools becoming your editor.</p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Chrome "Studio"</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="assets/images/chrome_editor.png" alt="Description" title="Description">
+    </article>
+
+    <aside class="note">
+      <section>
+        <ul>
+          <li>Text editor</li>
+          <li>Workspaces</li>
+          <li>SourceMaps</li>
+          <li>Screencasting</li>
+        </ul>
+      </section>
+    </aside>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>What does it mean?</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <q style="display: block; padding-top: 80px; padding-bottom: 50px; font-size: 50px; line-height: 60px;">Does this mean that the browser vendors are on their way to compete with the editor vendors?</q>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Stop.</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">Our assumptions are wrong.</p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Reality.</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">Application runtime.</p>
+    </article>
+  </slide>
+
+
+  <slide>
+    <hgroup>
+      <h2>We live here.</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <img src="assets/images/sublime.png" alt="Description" title="Description">
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Disconnect.</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <img src="assets/images/browser_editor_wall.png" alt="Description" title="Description">
+    </article>
+  </slide>
+
+  <slide class="segue section">
+    <hgroup>
+      <h2>What do we need?</h2>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: left; line-height: 70px; ">Keep our editors being editors, and let’s integrate.</p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>A more sane workflow</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <img src="assets/images/editor_workflow.png" style="margin-top: -40px" alt="Description" title="Description">
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: left; line-height: 70px; color: #333; ">I think deep integration between our editors and browsers is the key to better a webplatform.</p>
+    </article>
+  </slide>
+
+  <slide class="segue section">
+    <hgroup>
+      <h2>What's happening?</h2>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Emmet LiveStyle</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <img src="assets/images/emmet_livestyle.png" style="margin-top: -40px" alt="Description" title="Description">
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Microsoft BrowserLink</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <img src="assets/images/browserlink.png" style="margin-top: -40px" alt="Description" title="Description">
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Stop again.</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">Inventing proprietary protocols.</p>
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: left; line-height: 70px; ">Remote debugging protocols.</p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Remote debugging protocols</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <img src="assets/images/Remote_Debugging_protocols.png" alt="Description" title="Description">
+    </article>
+
+    <aside class="note">
+      <section>
+        <ul>
+          <li>No IE pun</li>
+        </ul>
+      </section>
+    </aside>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">What if we did something about it?</p>
+    </article>
+  </slide>
+
+
+  <slide>
+    <hgroup>
+      <h2>RemoteDebug.org</h2>
+    </hgroup>
+    <article class="">
+      <iframe src="http://remotedebug.org" style='width: 100%; height: 500px'></iframe>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>RemoteDebug vision</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <img src="assets/images/remotedebug_overview.png" alt="Description" title="Description">
+    </article>
+
+    <aside class="note">
+      <section>
+        <ul>
+          <li>Editor to Browser</li>
+          <li>DevTool to other browser</li>
+          <li>Telemetry to Firefox</li>
+        </ul>
+      </section>
+    </aside>
+
+
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Why the Chrome protocol?</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">Documented + integrations</p>
+    </article>
+
+    <aside class="note">
+      <section>
+        <ul>
+          <li>API and Protocol</li>
+        </ul>
+      </section>
+    </aside>
+
+
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Like Lighttable and Brackets</h2>
+    </hgroup>
+
+    <article class="flexbox" style="overflow: hidden;">
+      <img src="assets/images/lighttable.png" alt="Description" title="Description">
+      <img src="assets/images/brackets.png" alt="Description" title="Description" style="position:absolute; left: 100px; top: 280px;">
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">Enough talk.</p>
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: left;">The open web follows standards.</p>
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">Our tools should too.</p>
+    </article>
+
+    <aside class="note">
+      <section>
+        <ul>
+          <li>Get involved: remotedebug.org</li>
+          <li>We need to make this happen</li>
+        </ul>
+      </section>
+    </aside>
+
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Get Involved</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="assets/images/remotedebug_teaser.png" style="margin-top: -30px;" />
+    </article>
+  </slide>
+
+  <slide class="thank-you-slide segue nobackground">
+    <article class="flexbox vleft">
+      <h2>Thanks.</h2>
+    </article>
+    <p class="auto-fadein" data-config-contact>
+      <!-- populated from slide_config.json -->
+    </p>
+  </slide>
+
+
+</slides>
+
+</body>
+</html>
