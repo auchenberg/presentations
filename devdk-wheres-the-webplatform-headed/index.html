@@ -1,0 +1,648 @@
+
+<!--
+Google IO 2012 HTML5 Slide Template
+
+Authors: Eric Bidelman <ebidel@gmail.com>
+         Luke Mahé <lukem@google.com>
+
+URL: https://code.google.com/p/io-2012-slides
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" media="all" href="assets/stylesheets/compiled/default.css">
+  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="assets/stylesheets/css/phone.css">
+  <base target="_blank">
+
+  <script data-main="assets/javascripts/slides" src="assets/javascripts/require-1.0.8.min.js"></script>
+</head>
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+
+  <slide class="title-slide segue nobackground">
+    <hgroup class="auto-fadein">
+        <img src="images/devdk-logo.png" width="200" style="margin-bottom: 20px;">
+        <h1 data-config-title></h1>
+        <h2 data-config-subtitle></h2>
+        <p data-config-presenter></p>
+    </hgroup>
+  </slide>
+
+    <slide>
+        <article class="flexbox vcenter">
+            <img src="images/citrix.jpg" width="500">
+        </article>
+    </slide>
+
+    <slide>
+        <article class="flexbox vcenter">
+            <img src="images/hutt.svg" width="500">
+            <p style="font-size: 60px; margin-top: 30px ">http://hu.tt</p>
+        </article>
+    </slide>
+
+    <slide>
+        <hgroup>
+            <h2>WebPlatform</h2>
+        </hgroup>
+        <article class="flexbox vcenter">
+            <img src="images/webplatform.png" width="300">
+        </article>
+    </slide>
+
+    <slide>
+        <article class="flexbox vcenter">
+            <p style="font-size: 50px; text-align: center;">First a flashback</p>
+        </article>
+    </slide>
+
+    <slide>
+        <article class="flexbox vcenter">
+            <img src="images/ie20.jpg" width="500">
+        </article>
+    </slide>
+
+    <slide>
+        <hgroup>
+            <h2>The stack</h2>
+        </hgroup>
+        <article class="flexbox vcenter">
+            <img src="images/lamp-stack.jpg">
+            <img src="images/microsoft_asp.gif" width="400" style="margin-left: 50px;" />
+        </article>
+    </slide>
+
+    <slide>
+        <hgroup>
+            <h2>Server-sided architecture</h2>
+        </hgroup>    
+        <article class="flexbox vcenter">
+            <img src="images/architecture_classic.jpg">
+        </article>
+    </slide>
+
+    <slide>
+        <article class="flexbox vcenter">
+            <p style="font-size: 50px; text-align: center;">Browser = Document reader</p>
+        </article>
+    </slide>
+
+    <slide>
+        <article class="flexbox vcenter">
+            <img src="images/html5-logo.png" alt="Description" title="Description">
+            <footer class="source">W3C</footer>
+        </article>
+    </slide>
+
+    <slide>
+        <hgroup>
+            <h2>Shift in standard bodies</h2>
+        </hgroup>
+
+        <article class="flexbox vcenter">
+            <img src="images/W3C_logo.jpg" alt="Description" title="Description" style="margin-right: 100px; opacity: 0.2">
+            <img src="images/whatwg-logo.png" alt="Description" title="Description" style=" ">
+            <footer class="source">W3C & WHATWG</footer>
+        </article>
+    </slide>
+
+    <slide>
+        <article class="flexbox vcenter">
+            <p style="font-size: 50px; text-align: center;">Story: How did we get the HTML5 logo?</p>
+        </article>
+    </slide>
+
+
+    <slide>
+        <article class="">
+            <p style="font-size: 40px; text-align: left; margin-bottom: 40px; ">January 18, 2011</p>
+            <p style="font-size: 50px; text-align: left; margin-top: 100px;">CNET: "W3C's new logo promotes HTML5--and more"</p>
+
+            <p style="font-size: 30px; line-height: 160%; font-style: italic; text-align: left; margin-top: 100px;">
+                "The logo is a general-purpose visual identity for a broad set of open Web technologies, including HTML5, CSS, SVG, WOFF, and others,"
+            </p>
+        </article>
+    </slide>
+
+    <slide>
+        <article class="">
+          <p style="font-size: 40px; text-align: left; margin-bottom: 40px; ">January 19, 2011</p>
+          <p style="font-size: 50px; text-align: left; margin-top: 100px;">WHATWG: "HTML is the new HTML5"</p>
+
+          <p style="font-size: 30px; line-height: 160%; font-style: italic; text-align: left; margin-top: 100px;">
+            "... we moved to a new development model, where the technology is not versioned and instead we just have a living document that defines the technology as it evolves."
+          </p>
+        </article>
+    </slide>
+
+    <slide>
+        <article class="">
+          <p style="font-size: 40px; text-align: left; margin-bottom: 40px; ">January 19, 2011</p>
+
+          <iframe src="http://www.theregister.co.uk/2011/01/19/html5_logo/" height="400"></iframe>
+        </article>
+    </slide>
+
+    <slide>
+        <article class="">
+          <p style="font-size: 40px; text-align: left; margin-bottom: 40px; ">January 22, 2011</p>
+
+          <iframe src="http://www.theregister.co.uk/2011/01/22/html5_further_confusion/" height="400"></iframe>
+        </article>
+    </slide>
+
+    <slide class="">
+        <article class="flexbox vcenter">
+            <p style="font-size: 50px; text-align: center;">New development model.</p>
+        </article>
+    </slide>
+
+    <slide>
+        <hgroup>
+            <h2>WHATWG HTML Spec.</h2>
+        </hgroup>
+        <article>
+            <iframe data-src="http://www.whatwg.org/specs/web-apps/current-work/multipage/"></iframe>
+        </article>
+    </slide>    
+
+    <slide>
+        <article class="flexbox vcenter">
+            <img src="images/html5-logo.png" alt="Description" title="Description">
+            <footer class="source">W3C</footer>
+        </article>
+    </slide>
+
+    <slide>
+        <article class="flexbox vcenter">
+            <p style="font-size: 50px; text-align: center;">Web applications</p>
+        </article>
+    </slide>
+
+    <slide class="">
+        <article class="flexbox vcenter">
+            <p style="font-size: 50px; text-align: center;">Browser = application runtime</p>
+        </article>
+    </slide>
+
+    <slide class="section">
+        <article class="flexbox vcenter">
+            <p style="font-size: 50px; text-align: center;">What has happend to the platform?</p>
+        </article>
+    </slide>
+
+    <slide>
+        <article class="flexbox vcenter">
+            <img src="images/html5-tagcloud.png" alt="Description" title="Description">
+        </article>
+    </slide>
+
+    <slide>
+        <hgroup>
+          <h2>No more plugins</h2>
+        </hgroup>
+
+        <article class="flexbox vcenter">
+            <img src="images/javalogocross.png" alt="Description" title="Description">        
+        </article>
+    </slide>
+
+
+    <slide>
+        <hgroup>
+          <h2>Responsive web</h2>
+        </hgroup>
+
+        <article class="flexbox vcenter">
+            <img src="images/responsive_web.png" alt="Description" title="Description">        
+        </article>
+    </slide>
+
+    <slide>
+        <hgroup>
+          <h2>JavaScript performance. Solved.</h2>
+        </hgroup>
+
+        <article class="flexbox vcenter">
+            <img src="images/js-chrome.png" alt="Description" title="Description" width="600">        
+            <footer class="source">ejohn.org/blog/javascript-performance-rundown/</footer>
+        </article>
+    </slide>
+
+    <slide>
+        <hgroup>
+          <h2>JavaScript performance. Solved.</h2>
+        </hgroup>
+
+        <article class="flexbox vcenter">
+            <img src="images/asm.png" alt="Description" title="Description" width="100%">   
+            <footer class="source">hacks.mozilla.org/2013/12/gap-between-asm-js-and-native-performance-gets-even-narrower-with-float32-optimizations/</footer>
+        </article>
+    </slide>
+
+    <slide>
+        <hgroup>
+          <h2>Browser usage has shifted.</h2>
+        </hgroup>
+
+        <article class="flexbox vcenter">
+            <img src="images/browser_stats.jpg" alt="Description" title="Description">        
+        </article>
+    </slide>
+
+    <slide>
+        <article class="flexbox vcenter">
+            <p style="font-size: 50px; text-align: center;">More consistent rendering.</p>
+        </article>
+    </slide>
+
+
+    <slide>
+        <article class="flexbox vcenter">
+            <p style="font-size: 50px; text-align: center;">Continuous deployment.</p>
+        </article>
+    </slide>
+
+    <slide class="section">
+        <article class="flexbox vcenter">
+            <p style="font-size: 50px; text-align: center;">What about the way we build apps?</p>
+        </article>
+    </slide>
+
+    <slide>
+        <hgroup>
+            <h2>From server-sided architecture</h2>
+        </hgroup>
+        <article class="flexbox vcenter">
+            <img src="images/architecture_classic.jpg" alt="Description" title="Description">
+            <footer class="source">LinkedIn</footer>
+        </article>
+    </slide>
+
+    <slide>
+        <hgroup>
+            <h2>From server-sided frameworks</h2>
+        </hgroup>
+        <article class="flexbox vcenter">
+            <img src="images/rubyonrails.png" alt="Description" title="Description">
+            <img src="images/aspnet.jpg" alt="Description" title="Description">
+        </article>
+    </slide>
+
+    <slide>
+        <hgroup>
+            <h2>Towards client-sided architecture</h2>
+        </hgroup>
+        <article class="flexbox vcenter">
+            <img src="images/architecture_clientside.jpg" alt="Description" title="Description">
+            <footer class="source">LinkedIn</footer>
+        </article>
+    </slide>
+
+    <slide>
+        <hgroup>
+            <h2>Towards client-sided frameworks</h2>
+        </hgroup>
+        <article class="flexbox vcenter">
+            <img src="images/angular.png" alt="Description" title="Description" width="200" style="margin-left: 80px;">
+            <img src="images/emberjs.png" alt="Description" title="Description" width="200">
+            <br />
+            <br />
+            <img src="images/backbone.jpg" alt="Description" title="Description">
+            
+        </article>
+    </slide>
+
+    <slide>
+        <hgroup>
+            <h2>JavaScript is everywhere</h2>
+        </hgroup>
+        <article class="flexbox vcenter">
+            <img src="images/js.jpg" alt="Description" title="Description" width="500">
+        </article>
+    </slide>
+
+    <slide>
+        <hgroup>
+            <h2>Unified code-bases.</h2>
+        </hgroup>
+        <article class="flexbox vcenter">
+            <img src="images/nodejs.png" alt="Description" title="Description" width="700">
+        </article>
+    </slide>
+
+    <slide class="section">
+        <article class="flexbox vcenter">
+            <p style="font-size: 50px; text-align: center;">What about mobile?</p>
+        </article>
+    </slide>
+
+    <slide>
+        <hgroup>
+          <h2>Opera Mini</h2>
+        </hgroup>
+
+        <article class="flexbox vcenter">
+            <img src="images/operamini.jpg" alt="Description" title="Description" width="400">
+        </article>
+    </slide>
+
+    <slide>
+        <hgroup>
+          <h2>Safari 7</h2>
+        </hgroup>
+
+        <article class="flexbox vcenter">
+            <img src="images/safari7.png" alt="Description" title="Description">
+        </article>
+    </slide>
+
+    <slide>
+        <hgroup>
+          <h2>Facebook and HTML5</h2>
+        </hgroup>
+
+        <article class="flexbox vcenter">
+            <img src="images/facebook-app.png" alt="Description" title="Description">
+        </article>
+    </slide>
+
+    <slide>
+        <hgroup>
+          <h2>And it's problems...</h2>
+        </hgroup>
+
+        <article class="flexbox vcenter">
+          <img src="images/facebook-nocss.png" alt="Description" title="Description">
+        </article>
+    </slide>
+
+    <slide>
+        <hgroup>
+          <h2>Said about HTML5</h2>
+        </hgroup>
+
+        <article>
+
+          <q style="display: block; padding-top: 80px; padding-bottom: 50px;">
+            ... When I'm introspective about the last few years I think the <b>biggest
+            mistake</b> that we made, as a company, is <b>betting too much on HTML5</b> as
+            opposed to native... <b>because it just wasn't there...</b>.
+          </q>
+
+          <div class="author">
+            Mark Zuckerberg<br>
+            Facebook
+          </div>
+
+        </article>
+
+    </slide>
+
+    <slide>
+        <hgroup>
+            <h2>W3C Core Mobile Web Platform Group</h2>
+        </hgroup>
+        <article>
+            <iframe data-src="http://coremob.github.com/coremob-2012/"></iframe>
+        </article>
+    </slide>
+
+    <slide>
+        <hgroup>
+            <h2>Identified problems</h2>
+        </hgroup>
+        <article>
+            <ul>
+                <li>Rendering
+                  <ul>
+                    <li>FPS / GPU</li>
+                  </ul>
+                </li>
+                <li>Assets
+                  <ul>
+                    <li>Delivery</li>
+                    <li>Unloading images</li>
+                  </ul>
+                </li>
+                <li>Network/Caching/Storage
+                  <ul>
+                    <li>AppCache is unusable.</li>
+                    <li>Reliable way to detect network.</li>
+                  </ul>
+                </li>
+                <li>Tooling
+                  <ul>
+                    <li>Debugging / Blackboxes</li>
+                  </ul>
+                </li>
+            </ul>
+        </article>
+    </slide>
+
+    <slide>
+        <hgroup>
+          <h2>Said about HTML5...continued</h2>
+        </hgroup>
+
+        <article>
+
+          <q style="display: block; padding-top: 80px; padding-bottom: 50px;">
+            ... I'm actually, on <b>long-term</b>, really excited about it. One of the
+            things that's interesting is we actually have <b>more people</b> on a <b>daily basis</b>
+            using <b>mobile Web Facebook</b> than we have using our iOS or Android apps
+            combined. So <b>mobile Web is a big thing</b> for us.
+          </q>
+
+          <div class="author">
+            Mark Zuckerberg<br>
+            Facebook
+          </div>
+
+        </article>
+
+    </slide>
+
+    <slide>
+        <hgroup>
+            <h2>Mobile is damn important.</h2>
+        </hgroup>
+
+        <article class="flexbox vcenter">
+            <img src="images/comscore-mobile-users-desktop-users-2014.jpg" width="700">
+        </article>
+    </slide>
+
+    <slide>
+        <hgroup>
+            <h2>Mobile usage</h2>
+        </hgroup>
+
+        <article class="flexbox vcenter">
+            <img src="images/flurry-apps.png" width="650">
+        </article>
+    </slide>
+
+    <slide class="section">
+        <hgroup>
+            <h2>What is mobile web?</h2>
+        </hgroup>
+        <article class="">
+
+            <q style="display: block; padding-top: 80px; padding-bottom: 50px;">
+                We shouldn’t think of “the web” as only what renders in web browsers. We should think of the web as anything transmitted using HTTP and HTTPS. Apps and websites are peers, not competitors. They’re all just clients to the same services.
+            </q>
+
+            <div class="author">
+                John Gruber
+            </div>
+
+            <footer class="source">http://daringfireball.net/2014/04/rethinking_what_we_mean_by_mobile_web</footer>
+        </article>
+    </slide>
+
+    <slide class="">
+        <article class="flexbox vcenter">
+            <p style="font-size: 50px; text-align: center;">We are in a transition phase.</p>
+        </article>
+    </slide>
+
+    <slide>
+        <hgroup>
+            <h2>Mobile market shares</h2>
+        </hgroup>
+
+        <article class="flexbox vcenter">
+            <img src="images/mobile_share.png" width="650">
+            <footer class="source">http://www.comscoredatamine.com/2014/04/smartphone-market-led-by-android-in-software-iphone-in-hardware/</footer>
+        </article>
+    </slide>
+
+    <slide>
+        <hgroup>
+            <h2>My homescreen</h2>
+        </hgroup>
+
+        <article class="flexbox vcenter">
+            <img src="images/android.png" width="300">
+        </article>
+    </slide>
+
+    <slide class="">
+        <article class="flexbox vcenter">
+            <p style="font-size: 50px; text-align: center;">Rendering and packaging.</p>
+        </article>
+    </slide>
+
+    <slide class="section">
+        <article class="flexbox vcenter">
+            <p style="font-size: 50px; text-align: center;">So, what's happening?</p>
+        </article>
+    </slide>
+
+    <slide>
+        <hgroup>
+            <h2>WebGL is changing rendering.</h2>
+        </hgroup>
+
+        <article class="flexbox vcenter">
+            <img src="images/webgl.png" width="400">
+            <img src="images/unity.jpg" width="400">
+        </article>
+    </slide>
+
+    <slide>
+        <hgroup>
+            <h2>ASM.js is making games possible</h2>
+        </hgroup>
+
+        <article class="">
+            <iframe style="height: 500px !important;" src="https://www.youtube.com/embed/XsyogXtyU9o" frameborder="0" allowfullscreen></iframe>
+        </article>
+    </slide>
+
+    <slide>
+        <hgroup>
+            <h2>WebRTC is changing realtime.</h2>
+        </hgroup>
+
+        <article class="flexbox vcenter">
+            <a href="https://hu.tt"><img src="images/webrtclogo.svg" width="400"></a>
+        </article>
+    </slide>
+
+    <slide>
+        <hgroup>
+            <h2>ServiceWorkers are changing offline.</h2>
+        </hgroup>
+
+        <article class="flexbox vcenter">
+            <img src="images/serviceworker.png" width="100%">
+        </article>
+    </slide>
+
+    <slide>
+        <hgroup>
+            <h2>WebComponents are solving modularity.</h2>
+        </hgroup>
+
+        <article class="flexbox vcenter">
+            <img src="images/webcomponents.svg" width="100%">
+        </article>
+    </slide>
+
+    <slide>
+        <hgroup>
+            <h2>FirefoxOS & ChromeOS are solving packaging.</h2>
+        </hgroup>
+
+        <article class="flexbox vcenter">
+            <img src="assets/images/firefoxos.jpg" />
+            <img src="assets/images/chromebook_pixel.png" style="margin-left: 50px;" />
+        </article>
+
+    </slide>
+
+    <slide>
+        <hgroup>
+            <h2>HTTP 2.0/SPDY is solving distribution.</h2>
+        </hgroup>
+
+        <article class="flexbox vcenter">
+            <img src="images/http2.png" width="100%"/>
+            <footer class="source">http://chimera.labs.oreilly.com/books/1230000000545/ch12.html#REQUEST_RESPONSE_MULTIPLEXING</footer>
+        </article>
+
+    </slide>
+
+    <slide>
+        <article class="flexbox vcenter">
+            <p style="font-size: 50px; text-align: center;">The web is updating every 6th week</p>
+        </article>
+    </slide>
+
+    <slide>
+        <article class="flexbox vcenter">
+            <p style="font-size: 50px; text-align: center;">It's here to stay.</p>
+        </article>
+    </slide>
+
+    <slide class="thank-you-slide segue nobackground">
+        <article class="flexbox vleft">
+            <h2>Thanks.</h2>
+        </article>
+            <p class="auto-fadein" data-config-contact>
+            <!-- populated from slide_config.json -->
+        </p>
+    </slide>
+
+</slides>
+
+</body>
+</html>
