@@ -1,0 +1,439 @@
+
+<!--
+Google IO 2012 HTML5 Slide Template
+
+Authors: Eric Bidelman <ebidel@gmail.com>
+         Luke Mahé <lukem@google.com>
+
+URL: https://code.google.com/p/io-2012-slides
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Podio: Going client-side on the web</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  <!--This one seems to work all the time, but really small on ipad-->
+  <!--<meta name="viewport" content="initial-scale=0.4">-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" media="all" href="theme/css/default.css">
+  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
+  <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+</head>
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+
+  <slide class="title-slide segue nobackground">
+
+    <hgroup class="auto-fadein">
+      <h1>What is this <img src="images/webrtc_logo.png" alt="Description" title="Description" width="400" style="position: relative; top: 20px;"> thing about?</h1>
+      <h1 data-config-title style="display: none"></h1>
+      <h2 data-config-subtitle></h2>
+      <p data-config-presenter></p>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <img src="images/webrtc_logo.png" alt="Description" title="Description">
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center; line-height: 60px;">Most think of &lt;video&gt; when hearing of WebRTC</p>
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">WebRTC is a high-level API to provide P2P communcation directly in the browser.</p>
+    </article>
+  </slide>
+
+  <slide class="segue section">
+    <hgroup>
+      <h2>A bit of history.</h2>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+
+      <img src="img/google.jpg" alt="Description" title="Description">
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center; margin-bottom: 10px;">On2</p>
+      <p style="font-size: 30px; text-align: center;">VPx video codecs</p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Acquired by Google in Feb 2010</h2>
+    </hgroup>
+    <article class="">
+      <iframe src="https://investor.google.com/releases/2009/0805.html"></iframe>
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center; margin-bottom: 10px;">Global IP Solutions</p>
+      <p style="font-size: 30px; text-align: center;">iLBC, iSAC, voice/video engines</p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Acquired by Google in May 2010</h2>
+    </hgroup>
+    <article class="">
+      <iframe src="http://www.eweek.com/c/a/VOIP-and-Telephony/Google-Buys-GIPS-to-Challenge-Skype-in-VOIP-897883/"></iframe>
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center; margin-bottom: 10px;">Foundation of WebM + WebRTC</p>
+    </article>
+  </slide>
+
+
+  <slide class="segue section">
+    <hgroup>
+      <h2>Let's dive into the details.</h2>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 30px; text-align: center;">Today</p>
+      <p style="font-size: 80px; text-align: center; font-weight: bold;">1.2 Billion+</p>
+      <p style="font-size: 30px; text-align: center;">WebRTC-enabled browsers</p>
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <img src="https://raw.github.com/paulirish/browser-logos/master/chrome/chrome_256x256.png" alt="Description" title="Description">
+      <img src="https://raw.github.com/paulirish/browser-logos/master/firefox/firefox_256x256.png" alt="Description" title="Description">
+      <img src="https://raw.github.com/paulirish/browser-logos/master/opera/opera_256x256.png" alt="Description" title="Description">
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">Real-Time Communication</p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>P2P Commuication</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="img/p2p-network.svg" alt="Description" title="Description" width="500">
+    </article>
+    <footer class="source">http://en.wikipedia.org/wiki/File:P2P-network.svg</footer>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>WebRTC 1.0 specification</h2>
+    </hgroup>
+    <article class="">
+      <iframe src="http://www.w3.org/TR/webrtc/"></iframe>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>WebRTC specification summary</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="img/connection_types.png" alt="Description" title="Description">
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Welcome to the abbreviation bingo</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+
+      <img src="img/webrtc-tag-cloud.png" alt="Description" title="Description">
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">What the f*uck is this?</p>
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">I don't know much of this.</p>
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">Your shouldn't, and that's the point!</p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Browser network stack</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="img/connectivity_stack.png" alt="Description" title="Description" width="800">
+    </article>
+    <footer class="source">http://chimera.labs.oreilly.com/books/1230000000545/ch18.html#_real_time_network_transports</footer>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>WebRTC: Audio and video engines.</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="img/webrtc_overview.png" alt="Description" title="Description" width="600">
+      <footer class="source">http://chimera.labs.oreilly.com/books/1230000000545/ch18.html#_audio_and_video_engines</footer>
+    </article>
+  </slide>
+
+
+
+  <slide>
+    <hgroup>
+      <h2>Core protocols</h2>
+    </hgroup>
+    <article class="flexbox">
+
+     <ul style="font-size: 30px;">
+        <li>
+        SDP - Session Description Protocol<br />
+        <p style="font-size:26px; padding-top: 10px;">Format for describing streaming media initialization parameters</p></li>
+        <li>STUN - Session Traversal Utilities for NAT
+        <p style="font-size:26px; padding-top: 10px;">Enables announcing your public IP addrreess during the negotiation phase of a session</p></li>
+        <li>TURN - Traversal Using Relays around NAT <br />
+        <p style="font-size:26px; padding-top: 10px;">Relays all media via a TURN server that is visible to all parties in a session</p></li>
+        <li>ICE - Interactive Connectivity Establishment<br />
+        <p style="font-size:26px; padding-top: 10px;">Decide the best solution connect (direct, STUN or TURN)</p></li>
+      </ul>
+
+    </article>
+  </slide>
+
+
+
+  <slide>
+    <hgroup>
+      <h2>Connectivity</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="img/connectivity_1.png" alt="Description" title="Description" style="margin-top: -30px; ">
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Connectivity</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="img/connectivity_2.png" alt="Description" title="Description" style="margin-top: -30px; ">
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Connectivity</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="img/connectivity_3.png" alt="Description" title="Description" style="margin-top: -30px; ">
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Connectivity</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="img/connectivity_4.png" alt="Description" title="Description" style="margin-top: -30px; ">
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Connectivity</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="img/connectivity_5.png" alt="Description" title="Description" style="margin-top: -30px; ">
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Overview</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="images/webrtc_overview.png" alt="Description" title="Description">
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Demo time</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <a style="font-size: 50px; text-align: center;" href="https://free.gotomeeting.com" target="_blank">GoToMeeting Free</a>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Challanges</h2>
+    </hgroup>
+    <article class="flexbox ">
+      <ul style="font-size: 30px;">
+        <li>How do en ensure quality? What is quality?</li>
+        <li>How do you gather connection stats?</li>
+        <li>What does "bad audio" mean?</li>
+        <li>When is P2P good enough?</li>
+        <li>Should we build MCU's to multiplex?</li>
+        <li>What's going on inside the video engines?</li>
+        <li>Echo cancellation (Firefox issue)</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Distribution architecture.</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="img/network_configurations.png" alt="Description" title="Description" width="700">
+      <footer class="source">http://chimera.labs.oreilly.com/books/1230000000545/ch18.html#_multiparty_architectures</footer>
+    </article>
+  </slide>
+
+
+  <slide class="segue section">
+    <hgroup>
+      <h2>WebRTC perspective</h2>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 30px; text-align: center;">2018</p>
+      <p style="font-size: 80px; text-align: center; font-weight: bold;">4.7 Billion+</p>
+      <p style="font-size: 30px; text-align: center;">WebRTC-enabled browsers</p>
+    </article>
+
+    <footer class="source">
+      http://www.telecomlead.com/enterprise-communications/despite-lack-of-support-from-microsoft-and-apple-mobile-webrtc-devices-to-touch-4-7-billion-by-2018/
+    </footer>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Mobiles</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <img src="images/nexus5.jpg" alt="Description" title="Description" height="500">
+      <img src="images/nexus7.jpg" alt="Description" title="Description" height="500">
+      <img src="images/firefoxos.jpg" alt="Description" title="Description" height="500">
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Wearables</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <img src="images/glass.jpg" alt="Description" title="Description" style="position: relative; top: -40px;">
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>M2M</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <img src="images/chromecast.jpg" alt="Description" title="Description">
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Network optimization</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <img src="img/peercdn.jpg" alt="Description" title="Description" style="position: relative; top: -40px;">
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Codec wars. Again.</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">VPx vs H.264</p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>W3C ORTC</h2>
+    </hgroup>
+
+    <article>
+      <iframe src="http://ortc.org/wp-content/uploads/2014/06/ortc.html"></iframe>
+    </article>
+  </slide>
+
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center; margin-bottom: 10px;">WebRTC is here and can't be ignored.</p>
+    </article>
+  </slide>
+
+
+  <slide>
+    <article class="flexbox vcenter">
+      <img style="text-align: center; display: inline-block; height: 400px; padding-bottom: 20px;" src="images/finger.png" alt="Description" title="Description">
+      <p style="font-size: 50px; text-align: center;">Questions?</p>
+    </article>
+  </slide>
+
+  <slide class="thank-you-slide segue nobackground">
+    <article class="flexbox vleft">
+      <h2>Thanks.</h2>
+    </article>
+    <p class="auto-fadein" data-config-contact>
+      <!-- populated from slide_config.json -->
+    </p>
+  </slide>
+
+
+</slides>
+
+</body>
+</html>
