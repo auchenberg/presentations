@@ -1,0 +1,246 @@
+
+<!--
+Google IO 2012 HTML5 Slide Template
+
+Authors: Eric Bidelman <ebidel@gmail.com>
+         Luke Mahé <lukem@google.com>
+
+URL: https://code.google.com/p/io-2012-slides
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" media="all" href="assets/stylesheets/compiled/default.css">
+  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="assets/stylesheets/css/phone.css">
+  <base target="_blank">
+
+  <script data-main="assets/javascripts/slides" src="assets/javascripts/require-1.0.8.min.js"></script>
+</head>
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+
+  <slide class="title-slide segue nobackground">
+
+    <img src="assets/img/remotedebug_logo.svg" width="300" />
+    <hgroup class="auto-fadein">
+      <h1 data-config-title></h1>
+      <h2 data-config-subtitle></h2>
+      <p data-config-presenter></p>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>About a year ago...</h2>
+    </hgroup>
+    <article class="">
+      <img src="assets/img/remotedebug.png" width="100%" />
+    </article>
+  </slide>
+  <slide>
+    <hgroup>
+      <h2>RemoteDebug vision</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <img src="assets/img/remotedebug_overview.png" alt="Description" title="Description">
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Not a "new" protocol</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <img src="assets/img/standards.png" alt="Description" title="Description" width="700">
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 30px; text-align: center;">It's <span style="color: #428BCA; font-weight: bold">damn</span> ambitious.</p>
+    </article>
+  </slide>
+ 
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 30px; text-align: center;">We need to fix our <span style="color: #428BCA; font-weight: bold">completely broken</span> workflow.</p>
+    </article>
+  </slide>
+
+  <slide class="segue section">
+    <hgroup>
+      <h2>Where are we at?</h2>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 30px; text-align: center;">It's <span style="color: #428BCA; font-weight: bold">early</span> days.</p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Node-inspector</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="assets/img/node-inspector.jpg" width="100%" />
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Microsoft Visual Studio demoed remote debugging</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="assets/img/pic2.jpg" width="100%" />
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>We have seen editors using remote debugging</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="assets/img/editors.png" />
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Mozilla caught the ball.</h2>
+    </hgroup>  
+    <article class="flexbox vcenter">
+      <img src="assets/img/moz_tweet.png">/
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Mozilla released WebIDE</h2>
+    </hgroup>
+    <article class="">
+      <a href="https://hacks.mozilla.org/2014/06/webide-lands-in-nightly/" target="_blank">
+        <img src="assets/img/webide.png" width="100%" />
+      </a>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Mozilla has fully embraced remote debugging</h2>
+    </hgroup>
+    <article class="">
+      <a href="https://hacks.mozilla.org/2014/09/firefox-tools-adapter/" target="_blank">
+        <img src="assets/img/pic1.jpg" />
+      </a>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Mozilla released Firefox Protocol Adaptors</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="assets/img/campd_fxdt-adapters.png" />
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>New tooling using remote debugging</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="assets/img/calibre.png" width="100%" />
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Re-use of tools for other platforms</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="assets/img/ponydebug.png" />
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>PonyDebugger</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="assets/img/ponydebug_view.png" width="100%" />
+    </article>
+  </slide>
+ 
+  <slide class="segue section">
+    <hgroup>
+      <h2>What's next?</h2>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: left; line-height: 60px;">We should <span style="color: #428BCA; font-weight: bold">start</span> using the remote debugging protocols.</p>
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: left; line-height: 60px;">We need to map out the <span style="color: #428BCA; font-weight: bold">differences</span> and what we <span style="color: #428BCA; font-weight: bold">actually</span> need, before we unify.</p>
+    </article>
+  </slide>
+
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px;  line-height: 4rem;">We should <span style="color: #428BCA; font-weight: bold">re-use</span> what the browser already does well.</p>
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px;  line-height: 4rem;">We should <span style="color: #428BCA; font-weight: bold">open</span> up for the data inside the browsers.</p>
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: left;">Let's <img src="assets/img/remotedebug_logo.svg" width="100" style="position: relative; top: 15px;" /> <span style="font-weight: bold; color: #000;">RemoteDebug</span> everything!</p>
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: left;">The <span style="color: #428BCA; font-weight: bold">open</span> web follows standards.</p>
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">Our tools should <span style="color: #428BCA; font-weight: bold">too</span>.</p>
+    </article>
+  </slide>
+
+  <slide class="thank-you-slide segue nobackground">
+    <article class="flexbox vleft">
+      <h2>Thanks.</h2>
+    </article>
+    <p class="auto-fadein" data-config-contact>
+      <!-- populated from slide_config.json -->
+    </p>
+  </slide>
+
+
+</slides>
+
+</body>
+</html>
