@@ -1,0 +1,590 @@
+
+<!--
+Google IO 2012 HTML5 Slide Template
+
+Authors: Eric Bidelman <ebidel@gmail.com>
+         Luke Mahé <lukem@google.com>
+
+URL: https://code.google.com/p/io-2012-slides
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" media="all" href="assets/stylesheets/compiled/default.css">
+  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="assets/stylesheets/css/phone.css">
+  <base target="_blank">
+
+  <script data-main="assets/javascripts/slides" src="assets/javascripts/require-1.0.8.min.js"></script>
+</head>
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+
+  <slide class="title-slide segue nobackground">
+    <img src="assets/img/remotedebug_logo.svg" width="250" />
+    <hgroup class="auto-fadein">
+      <h1 data-config-title></h1>
+      <h2 data-config-subtitle></h2>
+      <p data-config-presenter></p>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>DevTools. DevTools. DevTools</h2>
+    </hgroup>
+    <article class="">
+      <img src="assets/img/devtools.png" width="100%" />
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>I realized something</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <p style="font-size: 40px; text-align: center;">Our industry has a DevTools <span style="color: #428BCA; font-weight: bold">dogma</span>.</p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>2007: IE Developer Toolbar</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <img src="assets/img/ie-developer-toolbar.jpg" alt="Description" title="Description" width="100%" />
+    </article>
+
+    <footer class="source">http://sixrevisions.com/tools/internet_explorer_extensions_addons_web_developers/</footer>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>2015: Chrome DevTools</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <img src="assets/img/chrome_devtools.png" alt="Description" title="Description" width="100%" />
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Question</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <p style="font-size: 40px; text-align: center;">Is this really the <span style="color: #428BCA; font-weight: bold">best</span> we can do?</p>
+    </article>
+  </slide>
+
+  <slide class="questions">
+    <hgroup>
+      <h2>Thought experiment</h2>
+    </hgroup>
+
+    <article class="flexbox">
+      <ul>
+        <li>Why do I need to learn a new DevTools for each browser?</li>
+        <li>Why do I have to use different tools for authoring and debugging?</li>
+        <li>Why isn't my editor integrated with my browsers?</li>
+        <li>Why can't I decide which DevTools to use with my browsers?</li>
+        <li>Why can't I use DevTools to debug my mobile apps?</li>
+        <li>Why can't I leverage the browser logic in my new fancy tool?</li>
+        <li>Why are DevTools bundled with our browsers?</li>
+     </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Moden DevTool's are collections of tools</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <img src="assets/img/chrome_devtools_hightlighted.png" alt="Description" title="Description" width="100%" />
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Debugging context</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <img src="assets/img/devtools_fullscreen_bottom.png" alt="Description" title="Description" height="100%" />
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>A fraction of our screens</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <img src="assets/img/devtools_fullscreen_right.png" alt="Description" title="Description" height="100%" />
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Authoring context</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <img src="assets/img/sublime_text.png" alt="Description" title="Description" height="100%" />
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Our workflow is broken</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">Authoring tools <span style="color: #428BCA; font-weight: bold">!==</span> Debugging tools</p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Disconnect</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <img src="assets/img/authoring_debugging_disconnect.png" alt="Description" title="Description" height="100%" />
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>What if...</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">Authoring tools <span style="color: #428BCA; font-weight: bold">===</span> Debugging tools</p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>What if...</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <img src="assets/img/connection.png" alt="Description" title="Description" height="100%" />
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>We have tried, and failed</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <img src="assets/img/more_tools.png" alt="Description" title="Description" height="100%" />
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Security model</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <img src="assets/img/security_model.png" alt="Description" title="Description" height="100%" />
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>There's a better way!</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <img src="assets/img/devtools_remote_debugging.png" alt="Description" title="Description" height="100%" />
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>There's a better way!</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">Remote debugging protocols</p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>No common protocol</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+       <img src="assets/img/devtools_protocols.png" alt="Description" title="Description" width="100%" />
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>RemoteDebug was born</h2>
+    </hgroup>
+    <article class="">
+      <img src="assets/img/remotedebug.png" width="100%" style="border: 1px solid #bebebe"/>
+    </article>
+  </slide>
+
+
+  <slide>
+    <hgroup>
+      <h2>RemoteDebug vision</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <img src="assets/img/remotedebug_vision.png" alt="Description" title="Description">
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>RemoteDebug vision</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">An <span style="color: #428BCA; font-weight: bold">API</span> to our browsers.</p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Isn't this WebDriver?</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">It's a low-level <span style="color: #428BCA; font-weight: bold">API</span> to our browsers.</p>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>RemoteDebug</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">So how far are we?</p>
+    </article>
+  </slide>
+
+  <slide class="section segue">
+    <hgroup>
+    <img src="assets/img/protocol_adaptors.png" width="250" style="margin-bottom: 50px;" />
+      <h2>Protocol adaptors</h2>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Protocol adaptors</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <img src="assets/img/remotedebug_protocol_adaptors.png" alt="Description" title="Description" width="100%">
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Safari protocol adaptor</h2>
+    </hgroup>
+
+    <article class="flexbox">
+      <img src="assets/img/remotedebug_safari_adaptor.png" alt="Description" title="Description" width="100%" style="border: 1px solid #bebebe">
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Firefox protocol adaptor</h2>
+    </hgroup>
+
+    <article class="flexbox">
+      <img src="assets/img/remotedebug_firefox_adaptor.png" alt="Description" title="Description" width="100%" style="border: 1px solid #bebebe">
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>IE protocol adaptor (Edge?)</h2>
+    </hgroup>
+
+    <article class="flexbox ">
+      <img src="assets/img/remotedebug_ie_adaptor.png" alt="Description" title="Description" width="100%" style="border: 1px solid #bebebe">
+    </article>
+  </slide>
+
+  <slide class="section segue">
+    <hgroup>
+      <img src="assets/img/remotedebug_gateway_logo.png" width="250" style="margin-bottom: 50px;" />
+      <h2>RemoteDebug Gateway</h2>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>RemoteDebug Gateway</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <img src="assets/img/remotedebug_gateway_flow.png" alt="Description" title="Description" width="100%">
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>RemoteDebug Gateway</h2>
+    </hgroup>
+
+    <article class="flexbox ">
+      <img src="assets/img/remotedebug_gateway.png" alt="Description" title="Description" width="100%" style="border: 1px solid #bebebe">
+    </article>
+  </slide>
+
+
+  <slide class="section segue">
+    <hgroup>
+      <img src="assets/img/icon_integrations.png" width="250" style="margin-bottom: 50px;" />
+      <h2>Integrations</h2>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Adobe brackets</h2>
+    </hgroup>
+
+    <article class="flexbox vcenter">
+      <img src="assets/img/adobe_brackets.png" alt="Description" title="Description" height="100%">
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Microsoft Visual Studio</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="assets/img/pic2.jpg" width="100%" />
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Other editors too</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="assets/img/editors.png" />
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Calibre</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="assets/img/calibre.png" width="100%" />
+    </article>
+  </slide>
+
+  <slide class="segue section">
+    <hgroup>
+      <img src="assets/img/reuse.png" width="250" style="margin-bottom: 50px;" />
+      <h2>Re-use across platforms</h2>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Strongloop Node Inspector</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="assets/img/node-inspector.jpg" width="100%" />
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Square PonyDebugger</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="assets/img/ponydebug_view.png" width="100%" />
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Facebook Stetho</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="assets/img/facebook_stetho.jpg" width="100%" />
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Facebook Stetho</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="assets/img/facebook_stetho_discover.jpg" width="100%" />
+    </article>
+  </slide>
+
+  <slide class="segue section">
+    <hgroup>
+      <h2>Similar initiatives.</h2>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Mozilla Firefox Protocol Adaptors</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="assets/img/mozilla_valence.png" style="border: 1px solid #bebebe" />
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Mozilla Firefox Developer Edition</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="assets/img/ff_developer_edition.png" width="100%" style="border: 1px solid #bebebe" />
+    </article>
+  </slide>
+
+  <slide class="segue section">
+    <hgroup>
+      <img src="assets/img/icon_experiment.png" width="250" style="margin-bottom: 50px;" />
+      <h2>Perspective.</h2>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Taking DevTools outside the browser</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="assets/img/chrome_devtools_app.png" />
+    </article>
+  </slide>
+
+  <slide class="questions">
+    <hgroup>
+      <h2>Thought experiment revised</h2>
+    </hgroup>
+
+    <article class="flexbox">
+      <ul>
+        <li>Why do I need to learn a new DevTools for each browser?</li>
+        <li>Why do I have to use different tools for authoring and debugging?</li>
+        <li>Why isn't my editor integrated with my browsers?</li>
+        <li>Why can't I decide which DevTools to use with my browsers?</li>
+        <li>Why can't I use DevTools to debug my mobile apps?</li>
+        <li>Why can't I leverage the browser logic in my new fancy tool?</li>
+        <li>Why are DevTools bundled with our browsers?</li>
+     </ul>
+    </article>
+  </slide>
+
+
+  <slide class="">
+    <hgroup>
+      <h2>BrowserRemote</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="assets/img/browser_remote_logo.png" width="400" />
+    </article>
+  </slide>
+
+  <slide class="">
+    <hgroup>
+      <h2>BrowserRemote</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="assets/img/browser_remote_explainer.png" />
+    </article>
+  </slide>
+
+  <slide class="">
+    <hgroup>
+      <h2>BrowserRemote</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="assets/img/browser_remote.png" style="border: 1px solid #bebebe" />
+    </article>
+  </slide>
+
+  <slide class="segue section">
+    <hgroup>
+    <img src="assets/img/icon_future.png" width="250" style="margin-bottom: 50px;" />
+      <h2>Going forward.</h2>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; line-height: 60px; text-align: left;">Let's stop <span style="color: #428BCA; font-weight: bold">reinventing</span> our tools.</p>
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; line-height: 60px; text-align: left;">Let's <span style="color: #428BCA; font-weight: bold">reuse</span> our tools.</p>
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; line-height: 60px; text-align: left;">Let's make it easier to <span style="color: #428BCA; font-weight: bold">build</span> for the web.</p>
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; line-height: 60px; text-align: left;">We need a <span style="color: #428BCA; font-weight: bold">sane</span> development workflow.</p>
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: left;">The <span style="color: #428BCA; font-weight: bold">open</span> web follows standards.</p>
+    </article>
+  </slide>
+
+  <slide>
+    <article class="flexbox vcenter">
+      <p style="font-size: 50px; text-align: center;">Our tools should <span style="color: #428BCA; font-weight: bold">too</span>.</p>
+    </article>
+  </slide>
+
+  <slide class="thank-you-slide segue nobackground">
+    <article class="flexbox vleft">
+      <h2>Thanks.</h2>
+    </article>
+    <p class="auto-fadein" data-config-contact>
+      <!-- populated from slide_config.json -->
+    </p>
+  </slide>
+
+
+</slides>
+
+</body>
+</html>
